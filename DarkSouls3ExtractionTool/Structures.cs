@@ -6,177 +6,217 @@ using System.Text;
 
 namespace DarkSouls3ExtractionTool
 {
+    [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 80)]
+    public struct CalcCorrectGraph
+    {
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public float[] StageMaxVal;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public float[] StageMaxGrowVal;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 5)]
+        public float[] AdjPt_maxGrowVal;
+        public float Init_inclination_soul;
+        public float Adjustment_value;
+        public float Boundry_inclination_soul;
+        public float Boundry_value;
+    }
+
+    [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 128)]
+    public struct ReinforceParamWeapon
+    {
+        public float PhysicsAtkRate;
+        public float MagicAtkRate;
+        public float FireAtkRate;
+        public float ThunderAtkRate;
+        public float StaminaAtkRate;
+        public float SaWeaponAtkRate;
+        public float SaDurabilityRate;
+        public float CorrectStrengthRate;
+        public float CorrectAgilityRate;
+        public float CorrectMagicRate;
+        public float CorrectFaithRate;
+        public float PhysicsGuardCutRate;
+        public float MagicGuardCutRate;
+        public float FireGuardCutRate;
+        public float ThunderGuardCutRate;
+        public float PoisonGuardResistRate;
+        public float DiseaseGuardResistRate;
+        public float BloodGuardResistRate;
+        public float CurseGuardResistRate;
+        public float StaminaGuardDefRate;
+        public byte SpEffectId1;
+        public byte SpEffectId2;
+        public byte SpEffectId3;
+        public byte ResidentSpEffectId1;
+        public byte ResidentSpEffectId2;
+        public byte ResidentSpEffectId3;
+        public byte MaterialSetId1;
+        public byte MaterialSetId2;
+        public float DarkAtkRate;
+        public float DarkGuardResistRate;
+        public float CorrectLuckRate;
+        public float Unknown1;
+        public float Unknown2;
+        public float Unknown3;
+    }
+
     [StructLayout(LayoutKind.Explicit, Size = 608)]
     public struct EquipParamWeapon
     {
         [FieldOffset(0x0)]
-        public uint sortId;
+        public uint BehaviorVariationId;
+        [FieldOffset(0x4)]
+        public uint SortId;
         [FieldOffset(0xC)]
-        public float weight;
+        public float Weight;
         [FieldOffset(0x20)]
-        public float strBaseCoef;
+        public float CorrectStrength;
         [FieldOffset(0x24)]
-        public float dexBaseCoef;
+        public float CorrectAgility;
         [FieldOffset(0x28)]
-        public float intBaseCoef;
+        public float CorrectMagic;
         [FieldOffset(0x2C)]
-        public float fthBaseCoef;
+        public float CorrectFaith;
         [FieldOffset(0x30)]
-        public float physicalAbsorption;
+        public float PhysGuardCutRate;
         [FieldOffset(0x34)]
-        public float magicAbsorption;
+        public float MagGuardCutRate;
         [FieldOffset(0x38)]
-        public float fireAbsorption;
+        public float FireGuardCutRate;
         [FieldOffset(0x3C)]
-        public float lightningAbsorption;
+        public float ThunGuardCutRate;
         [FieldOffset(0x40)]
-        public int effectOnHit1;
+        public int SpEffectBehaviorId1;
         [FieldOffset(0x44)]
-        public int effectOnHit2;
+        public int SpEffectBehaviorId2;
         [FieldOffset(0x48)]
-        public int effectOnHit3;
+        public int SpEffectBehaviorId3;
         [FieldOffset(0x4C)]
-        public int effectOnSelf1;
+        public int ResidentSpEffectId1;
         [FieldOffset(0x50)]
-        public int effectOnSelf2;
+        public int ResidentSpEffectId2;
         [FieldOffset(0x54)]
-        public int effectOnSelf3;
+        public int ResidentSpEffectId3;
         [FieldOffset(0xBE)]
-        public short maxDurability;
+        public short MaxDurability;
         [FieldOffset(0xC4)]
-        public short physicalBaseDamage;
+        public short AttackBasePhysics;
         [FieldOffset(0xC6)]
-        public short magicBaseDamage;
+        public short AttackBaseMagic;
         [FieldOffset(0xC8)]
-        public short fireBaseDamage;
+        public short AttackBaseFire;
         [FieldOffset(0xCA)]
-        public short lightningBaseDamage;
+        public short AttackBaseThunder;
+        [FieldOffset(0xCC)]
+        public short AttackBaseStamina;
         [FieldOffset(0xD4)]
-        public short stability;
+        public short Stability;
         [FieldOffset(0xD6)]
-        public short reinforcementType;
+        public short ReinforceTypeId;
         [FieldOffset(0xE8)]
-        public byte physicalStatFunc;
+        public byte PhysicsStatFunc;
         [FieldOffset(0xEE)]
-        public byte strReq;
+        public byte ProperStrength;
         [FieldOffset(0xEF)]
-        public byte dexReq;
+        public byte ProperAgility;
         [FieldOffset(0xF0)]
-        public byte intReq;
+        public byte ProperMagic;
         [FieldOffset(0xF1)]
-        public byte fthReq;
+        public byte ProperFaith;
         [FieldOffset(0x179)]
-        public byte magicStatFunc;
+        public byte MagicStatFunc;
         [FieldOffset(0x17A)]
-        public byte fireStatFunc;
+        public byte FireStatFunc;
         [FieldOffset(0x17B)]
-        public byte lightningStatFunc;
+        public byte ThunderStatFunc;
         [FieldOffset(0x188)]
-        public short darkBaseDamage;
+        public short AttackBaseDark;
         [FieldOffset(0x18A)]
-        public byte darkStatFunc;
+        public byte DarkStatFunc;
         [FieldOffset(0x18B)]
-        public byte poisonStatFunc;
+        public byte PoisonStatFunc;
         [FieldOffset(0x190)]
-        public byte bleedStatFunc;
+        public byte BleedStatFunc;
         [FieldOffset(0x191)]
-        public byte luckReq;
+        public byte ProperLuck;
         [FieldOffset(0x198)]
-        public float lckBaseCoef;
+        public float CorrectLuck;
         [FieldOffset(0x1A2)]
-        public short weaponClass;
+        public short WeaponClass;
         [FieldOffset(0x228)]
-        public int aecp;
-    }
-
-    [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct ReinforceParamWeapon
-    {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public float[] v1;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)]
-        public byte[] v2;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 10)]
-        public float[] v3;
-    }
-
-    [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct CalcCorrectGraph
-    {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public float[] values;
+        public int AecpId;
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 128)]
     public struct AttackElementCorrectParam
     {
-        public int bitmask;
+        public int Bitmask;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 50)]
-        public short[] values;
+        public short[] v;
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 800)]
     public struct SpEffectParam
     {
         [FieldOffset(0xCC)]
-        public short poisonBase;
+        public short PoisonBase;
         [FieldOffset(0xD0)]
-        public int strangeValue;
+        public int StrangeValue;
         [FieldOffset(0xD4)]
-        public short bleedBase;
+        public short BleedBase;
         [FieldOffset(0x160)]
-        public byte strangeEnum;
+        public byte StrangeEnum;
         [FieldOffset(0x1AC)]
-        public short frostBase;
+        public short FrostBase;
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0)]
     public struct Magic
     {
         [FieldOffset(0x8)]
-        public short sortId;
+        public short SortId;
     }
 
     [StructLayout(LayoutKind.Explicit, Size = 0)]
     public struct EquipParamProtector
     {
         [FieldOffset(0x0)]
-        public int sortId;
+        public int SortId;
         [FieldOffset(0x1C)]
-        public int sellValue;
+        public int SellValue;
         [FieldOffset(0x20)]
-        public float weight;
+        public float Weight;
         [FieldOffset(0xC0)]
-        public short poisonResist;
+        public short PoisonResist;
         [FieldOffset(0xC2)]
-        public short toxicResist;
+        public short ToxicResist;
         [FieldOffset(0xC4)]
-        public short bleedResist;
+        public short BleedResist;
         [FieldOffset(0xC6)]
-        public byte curseResist;
+        public byte CurseResist;
         [FieldOffset(0xE0)]
-        public float physicalDef;
+        public float PhysicalDef;
         [FieldOffset(0xE4)]
-        public float slashDef;
+        public float SlashDef;
         [FieldOffset(0xE8)]
-        public float strikeDef;
+        public float StrikeDef;
         [FieldOffset(0xEC)]
-        public float thrustDef;
+        public float ThrustDef;
         [FieldOffset(0xF0)]
-        public float magicDef;
+        public float MagicDef;
         [FieldOffset(0xF4)]
-        public float fireDef;
+        public float FireDef;
         [FieldOffset(0xF8)]
-        public float lightningDef;
+        public float LightningDef;
         [FieldOffset(0xAA)]
-        public short durability;
+        public short Durability;
         [FieldOffset(0xAC)]
-        public short durabilityMax;
+        public short DurabilityMax;
         [FieldOffset(0x110)]
-        public float poise;
+        public float Poise;
         [FieldOffset(0x118)]
-        public float darkDef;
+        public float DarkDef;
         [FieldOffset(0x12C)]
-        public short frostResist;
+        public short FrostResist;
     }
 }
