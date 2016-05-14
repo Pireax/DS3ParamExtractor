@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -52,7 +53,15 @@ namespace DarkSouls3ExtractionTool
         public static List<string> GetFieldNames<T>(T structure)
         {
             return GenerateListForeachField<T, string>(structure, (x, y) =>
-            x.Add(y.Name));
+            {
+                if (y.FieldType.IsArray)
+                {
+                    var length = ((Array)y.GetValue(structure)).Length;
+                    for (var i = 0; i < length; i++)
+                        x.Add(y.Name + i);
+                }
+                else x.Add(y.Name);
+            });
         }
 
         public static void TryExportParam<T>(string filename) where T : struct
@@ -68,7 +77,7 @@ namespace DarkSouls3ExtractionTool
 
             if (headers)
             {
-                var fieldNames = GetFieldNames(new T());
+                var fieldNames = GetFieldNames(BytesToStruct<T>(binaryData, (int)baseOffset));
                 exportFile.WriteLine("{0},{1},{2}", "id", "index", string.Join(",", fieldNames));
             }
 
@@ -108,8 +117,17 @@ namespace DarkSouls3ExtractionTool
             }
         }
 
+        static void Initialize()
+        {
+            var cultureInfo = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
+
+            System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
+        }
+
         static void Main(string[] args)
         {
+            Initialize();
             ParseArgs(args);
 
             TryExportParam<CalcCorrectGraph>("CalcCorrectGraph.param");
