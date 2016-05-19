@@ -196,51 +196,141 @@ namespace DarkSouls3ExtractionTool
                 return;
             }
             Console.WriteLine($"Exporting {filename}...");
-            var id = BitConverter.ToInt32(binaryData, 0);
-            switch (id)
+            string structName = GetStructName(binaryData);
+            switch (structName)
             {
-                case 0x00030828:
-                case 0x0003CDB0:
-                    TryExportParam<BehaviorParam>(filename, binaryData);
-                    break;
-                case 0x00162D40:
-                case 0x00182000:
+                case "ATK_PARAM_ST":
                     TryExportParam<AtkParam>(filename, binaryData);
                     break;
-                case 0x00036918:
-                    TryExportParam<EquipParamProtector>(filename, binaryData);
-                    break;
-                case 0x000039E8:
-                    TryExportParam<EquipParamAccessory>(filename, binaryData);
-                    break;
-                case 0x00001C48:
-                    TryExportParam<CalcCorrectGraph>(filename, binaryData);
-                    break;
-                case 0x00002180:
+                case "ATTACK_ELEMENT_CORRECT_PARAM_ST":
                     TryExportParam<AttackElementCorrectParam>(filename, binaryData);
                     break;
-                case 0x00164988:
+                case "BEHAVIOR_PARAM_ST":
+                    TryExportParam<BehaviorParam>(filename, binaryData);
+                    break;
+                case "CACL_CORRECT_GRAPH_ST":
+                    TryExportParam<CalcCorrectGraph>(filename, binaryData);
+                    break;
+                case "EQUIP_PARAM_ACCESSORY_ST":
+                    TryExportParam<EquipParamAccessory>(filename, binaryData);
+                    break;
+                case "EQUIP_PARAM_PROTECTOR_ST":
+                    TryExportParam<EquipParamProtector>(filename, binaryData);
+                    break;
+                case "EQUIP_PARAM_WEAPON_ST":
                     TryExportParam<EquipParamWeapon>(filename, binaryData);
                     break;
-                case 0x00007300:
+                case "MAGIC_PARAM_ST":
                     TryExportParam<Magic>(filename, binaryData);
                     break;
-                case 0x00073A00:
+                case "NPC_PARAM_ST":
                     TryExportParam<NpcParam>(filename, binaryData);
                     break;
-                case 0x00000618:
+                case "REINFORCE_PARAM_PROTECTOR_ST":
                     TryExportParam<ReinforceParamProtector>(filename, binaryData);
                     break;
-                case 0x00010320:
+                case "REINFORCE_PARAM_WEAPON_ST":
                     TryExportParam<ReinforceParamWeapon>(filename, binaryData);
                     break;
-                case 0x001E5D88:
+                case "SP_EFFECT_PARAM_ST":
                     TryExportParam<SpEffectParam>(filename, binaryData);
                     break;
+                case "ACTIONBUTTON_PARAM_ST":
+                case "AI_SOUND_PARAM_ST":
+                case "EQUIP_PARAM_GOODS_ST":
+                case "BONFIRE_WARP_PARAM_ST":
+                case "BUDGET_PARAM_ST":
+                case "BULLET_CREATE_LIMIT_PARAM_ST":
+                case "BULLET_PARAM_ST":
+                case "CEREMONY_PARAM_ST":
+                case "CHARACTER_INIT_PARAM":
+                case "CHARMAKEMENUTOP_PARAM_ST":
+                case "CHARMAKEMENU_LISTITEM_PARAM_ST":
+                case "CLEAR_COUNT_CORRECT_PARAM_ST":
+                case "COOL_TIME_PARAM_ST":
+                case "CULT_SETTING_PARAM_ST":
+                case "DECAL_PARAM_ST":
+                case "DIRECTION_CAMERA_PARAM_ST":
+                case "EQUIP_MTRL_SET_PARAM_ST":
+                case "ESTUS_FLASK_RECOVERY_PARAM_ST":
+                case "FACE_GEN_PARAM_ST":
+                case "FACE_PARAM_ST":
+                case "FACE_RANGE_PARAM_ST":
+                case "FOOT_SFX_PARAM_ST":
+                case "GAME_AREA_PARAM_ST":
+                case "GAME_PROGRESS_PARAM_ST":
+                case "GEMEFFECT_PARAM_ST":
+                case "GEM_CATEGORY_PARAM_ST":
+                case "GEM_DROP_DOPING_PARAM_ST":
+                case "GEM_DROP_MODIFY_PARAM_ST":
+                case "GEM_GEN_PARAM_ST":
+                case "HIT_EFFECT_SE_PARAM_ST":
+                case "HIT_EFFECT_SFX_CONCEPT_PARAM_ST":
+                case "HIT_EFFECT_SFX_PARAM_ST":
+                case "HIT_MTRL_PARAM_ST":
+                case "ITEMLOT_PARAM_ST":
+                case "KNOCKBACK_PARAM_ST":
+                case "KNOWLEDGE_LOADSCREEN_ITEM_PARAM_ST":
+                case "LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST":
+                case "LOAD_BALANCER_PARAM_ST":
+                case "LOCK_CAM_PARAM_ST":
+                case "LOD_BANK":
+                case "MAP_MIMICRY_ESTABLISHMENT_PARAM_ST":
+                case "MENUPROPERTY_LAYOUT":
+                case "MENUPROPERTY_SPEC":
+                case "MENU_OFFSCR_REND_PARAM_ST":
+                case "MENU_PARAM_COLOR_TABLE_ST":
+                case "MENU_VALUE_TABLE_SPEC":
+                case "MODEL_SFX_PARAM_ST":
+                case "MOVE_PARAM_ST":
+                case "MULTI_ESTUS_FLASK_BONUS_PARAM_ST":
+                case "MULTI_PLAY_CORRECTION_PARAM_ST":
+                case "MULTI_SOUL_BONUS_RATE_PARAM_ST":
+                case "NETWORK_AREA_PARAM_ST":
+                case "NETWORK_MSG_PARAM_ST":
+                case "NETWORK_PARAM_ST":
+                case "NPC_AI_ACTION_PARAM_ST":
+                case "NPC_THINK_PARAM_ST":
+                case "OBJECT_MATERIAL_SFX_PARAM_ST":
+                case "OBJECT_PARAM_ST":
+                case "OBJ_ACT_PARAM_ST":
+                case "PHANTOM_PARAM_ST":
+                case "PLAY_REGION_PARAM_ST":
+                case "PROTECTOR_GEN_PARAM_ST":
+                case "RAGDOLL_PARAM_ST":
+                case "ROLE_PARAM_ST":
+                case "SE_MATERIAL_CONVERT_PARAM_ST":
+                case "SHOP_LINEUP_PARAM":
+                case "SKELETON_PARAM_ST":
+                case "SP_EFFECT_VFX_PARAM_ST":
+                case "SWORD_ARTS_PARAM_ST":
+                case "TALK_PARAM_ST":
+                case "THROW_DIRECTION_SFX_PARAM_ST":
+                case "THROW_INFO_BANK":
+                case "TOUGHNESS_PARAM_ST":
+                case "UPPER_ARM_PARAM_ST":
+                case "WEAPON_GEN_PARAM_ST":
+                case "WEP_ABSORP_POS_PARAM_ST":
+                case "WET_ASPECT_PARAM_ST":
+                case "WIND_PARAM_ST":
                 default:
                     Console.WriteLine("This .param file is not yet supported.");
                     break;
             }
+        }
+        
+        private static string GetStructName(byte[] binaryData)
+        {
+            StringBuilder structName = new StringBuilder();
+            int structNameOffset = BitConverter.ToInt32(binaryData, 0);
+            byte nextChar;
+            while (structNameOffset < binaryData.Length && (nextChar = binaryData[structNameOffset]) != 0x00)
+            {
+                structName.Append((char)nextChar);
+                structNameOffset++;
+            }
+
+            return structName.ToString();
         }
 
         private static void OutputHelpAndExit()
