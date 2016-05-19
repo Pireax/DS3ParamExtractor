@@ -110,7 +110,7 @@ namespace DarkSouls3ExtractionTool
             var stream = new CodedOutputStream(exportFile);
 
             var protoClass = Type.GetType($"Ds3Ext.{typeof(T).Name}");
-            var protoWriteTo = protoClass.GetMethod("WriteTo");
+            var protoWriteTo = protoClass.GetMethod("WriteDelimitedTo");
             var protoId = protoClass.GetProperty("Id");
             var protoProperties = new List<PropertyInfo>(fieldNames.Count);
             protoProperties.AddRange(fieldNames.Select(fieldName => protoClass.GetProperty(FixStringProto(fieldName))));
@@ -124,7 +124,7 @@ namespace DarkSouls3ExtractionTool
                 for (var i = 0; i < protoProperties.Count; i++)
                     protoProperties[i].SetValue(protoInstance, fieldValues[i]);
 
-                protoWriteTo.Invoke(protoInstance, new object[] { stream });
+                ((IMessage)protoInstance).WriteDelimitedTo(exportFile);
             }
 
             exportFile.Close();
