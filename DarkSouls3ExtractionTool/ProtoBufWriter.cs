@@ -26,11 +26,11 @@ namespace DarkSouls3ExtractionTool
             {typeof(Enum), "enum"}
         };
 
-        public ProtoBufWriter(string path)
+        public ProtoBufWriter(string path, string packageName)
         {
             _sr = File.CreateText(path);
             _sr.WriteLine("syntax = \"proto3\";");
-            _sr.WriteLine("package ds3extraction");
+            _sr.WriteLine($"package {packageName};");
             _sr.WriteLine();
 
             _structHelper.TypesToSkip.AddRange(new[] { typeof(Unknown), typeof(Padding) });
@@ -45,10 +45,12 @@ namespace DarkSouls3ExtractionTool
                 throw new Exception();
 
             _sr.WriteLine($"message {messageName} {{");
+
+            _sr.WriteLine("  uint32 Id = 1;");
             for (var i = 0; i < types.Count; i++)
             {
                 var type = _protoTypeNames[types[i]];
-                _sr.WriteLine($"  {type} {names[i]};");
+                _sr.WriteLine($"  {type} {names[i]} = {i+2};");
             }
 
             _sr.WriteLine("}");

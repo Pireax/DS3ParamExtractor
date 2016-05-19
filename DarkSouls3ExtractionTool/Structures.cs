@@ -683,7 +683,7 @@ namespace DarkSouls3ExtractionTool
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 96)]
-    public struct EquipParamAccesory
+    public struct EquipParamAccessory
     {
         public int RefId;
         public int SfxVariationId;

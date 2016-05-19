@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Security.Policy;
 using System.Text;
+using System.Reflection;
+using Google.Protobuf;
 
 namespace DarkSouls3ExtractionTool
 {
@@ -19,6 +20,13 @@ namespace DarkSouls3ExtractionTool
             Debug       = 0x4, // 0b100
         }
 
+        public enum ExportFormat
+        {
+            Csv,
+            Proto
+        }
+
+        private static ExportFormat _exportFormat;
         private static Arguments _arguments;
         private static readonly StructureHelper StructHelper = new StructureHelper();
 
@@ -52,6 +60,15 @@ namespace DarkSouls3ExtractionTool
             var fname = Path.GetFileNameWithoutExtension(filename);
             var exportFile = File.CreateText($"{fname}Out.csv");
 
+            if ((_arguments & Arguments.Headers) == Arguments.Headers ||
+                (_arguments & Arguments.Debug) == Arguments.Debug)
+            {
+                if ((_arguments & Arguments.HeadersPlus) == Arguments.HeadersPlus ||
+                    (_arguments & Arguments.Debug) == Arguments.Debug)
+                    exportFile.WriteLine("2C,30,,,");
+                exportFile.WriteLine("IdMin,IdMax,Index,TableOffset,Text");
+            }
+
             for (var i = 0; i < length; i++)
             {
                 var idMin = BitConverter.ToInt32(binaryData, 0x2C + i * 16);
@@ -76,30 +93,44 @@ namespace DarkSouls3ExtractionTool
         {
             if (!File.Exists(filename))
                 throw new ArgumentException();
-
-            Console.WriteLine($"Exporting {filename}...");
-
             return File.ReadAllBytes(filename);
         }
 
-        public static IList<Param<T>> TryExportParam<T>(byte[] binaryData) where T : struct
+        // protobuf removes '_' characters and uppercases the first character so we need to do that also.
+        public static string FixStringProto(string fieldName)
         {
-            var length = BitConverter.ToInt16(binaryData, 0xA);
-            var ret = new List<Param<T>>(length);
-            var baseOffset = BitConverter.ToUInt32(binaryData, 0x30);
-
-            for (var i = 0; i < length; i++)
-            {
-                var realOffset = (int)baseOffset + Marshal.SizeOf(typeof(T)) * i;
-                var id = BitConverter.ToUInt32(binaryData, 0x40 + 0x18 * i);
-
-                var structure = StructureHelper.BytesToStruct<T>(binaryData, realOffset);
-                ret.Add(new Param<T>(id, i, realOffset, structure));
-            }
-            return ret;
+            return String.Concat(fieldName.Split('_').Select(str => str.First().ToString().ToUpper() + str.Substring(1)));
         }
 
-        public static void TryExportParam<T>(string filename, byte[] binaryData) where T : struct
+        public static void TryExportParamProto<T>(string filename, byte[] binaryData) where T : struct
+        {
+            var fname = Path.GetFileNameWithoutExtension(filename);
+            var fieldNames = StructHelper.GetFieldNames<T>();
+            var exportFile = File.Create($"{fname}Out.dat");
+            var stream = new CodedOutputStream(exportFile);
+
+            var protoClass = Type.GetType($"Ds3Ext.{typeof(T).Name}");
+            var protoWriteTo = protoClass.GetMethod("WriteTo");
+            var protoId = protoClass.GetProperty("Id");
+            var protoProperties = new List<PropertyInfo>(fieldNames.Count);
+            protoProperties.AddRange(fieldNames.Select(fieldName => protoClass.GetProperty(FixStringProto(fieldName))));
+
+            var paramData = TryExportParam<T>(binaryData);
+            foreach (var param in paramData)
+            {
+                var protoInstance = Activator.CreateInstance(protoClass);
+                var fieldValues = StructHelper.GetFieldValues(param.Structure);
+                protoId.SetValue(protoInstance, param.Id);
+                for (var i = 0; i < protoProperties.Count; i++)
+                    protoProperties[i].SetValue(protoInstance, fieldValues[i]);
+
+                protoWriteTo.Invoke(protoInstance, new object[] { stream });
+            }
+
+            exportFile.Close();
+        }
+
+        public static void TryExportParamCsv<T>(string filename, byte[] binaryData) where T : struct
         {
             var fname = Path.GetFileNameWithoutExtension(filename);
             var exportFile = File.CreateText($"{fname}Out.csv");
@@ -121,21 +152,50 @@ namespace DarkSouls3ExtractionTool
             foreach (var param in paramData)
             {
                 var fieldValues = StructHelper.GetFieldValues(param.Structure);
+
                 exportFile.WriteLine("{0},{1},{2},{3}", param.Id, param.Index, param.Offset, string.Join(",", fieldValues));
             }
 
             exportFile.Close();
         }
 
-        public static void TryExportParam<T>(string filename) where T : struct
+        public static IList<Param<T>> TryExportParam<T>(byte[] binaryData) where T : struct
         {
-            var binaryData = GetBinaryDataFromFile(filename);
-            TryExportParam<T>(filename, binaryData);
+            var length = BitConverter.ToInt16(binaryData, 0xA);
+            var ret = new List<Param<T>>(length);
+            var baseOffset = BitConverter.ToUInt32(binaryData, 0x30);
+
+            for (var i = 0; i < length; i++)
+            {
+                var realOffset = (int)baseOffset + Marshal.SizeOf(typeof(T)) * i;
+                var id = BitConverter.ToUInt32(binaryData, 0x40 + 0x18 * i);
+
+                var structure = StructureHelper.BytesToStruct<T>(binaryData, realOffset);
+                ret.Add(new Param<T>(id, i, realOffset, structure));
+            }
+            return ret;
+        }
+
+        public static void TryExportParam<T>(string filename, byte[] binaryData) where T : struct
+        {
+            if (_exportFormat == ExportFormat.Csv)
+                TryExportParamCsv<T>(filename, binaryData);
+            else if (_exportFormat == ExportFormat.Proto)
+                TryExportParamProto<T>(filename, binaryData);
         }
 
         public static void TryExportParam(string filename)
         {
-            var binaryData = GetBinaryDataFromFile(filename);
+            byte[] binaryData;
+            try
+            {
+                binaryData = GetBinaryDataFromFile(filename);
+            }
+            catch (ArgumentException)
+            {
+                return;
+            }
+            Console.WriteLine($"Exporting {filename}...");
             var id = BitConverter.ToInt32(binaryData, 0);
             switch (id)
             {
@@ -151,7 +211,7 @@ namespace DarkSouls3ExtractionTool
                     TryExportParam<EquipParamProtector>(filename, binaryData);
                     break;
                 case 0x000039E8:
-                    TryExportParam<EquipParamAccesory>(filename, binaryData);
+                    TryExportParam<EquipParamAccessory>(filename, binaryData);
                     break;
                 case 0x00001C48:
                     TryExportParam<CalcCorrectGraph>(filename, binaryData);
@@ -183,22 +243,42 @@ namespace DarkSouls3ExtractionTool
             }
         }
 
-        private static void OutputHelp()
+        private static void OutputHelpAndExit()
         {
-            Console.WriteLine("To use this tool simply place .param files from the game in the same folder and run it.");
-            Console.WriteLine("Alternatively give this tool the file path as argument, this also supports .fmg files.");
-            Console.WriteLine("Arguments (for .param):");
-            Console.WriteLine("-h\tHelp.");
-            Console.WriteLine("-H\tOutput column headers.");
-            Console.WriteLine("-H+\tOutput structure offsets and headers.");
-            Console.WriteLine("-d\tDebug Mode, outputs hidden columns.");
+            Console.WriteLine($"Usage: {Path.GetFileNameWithoutExtension(AppDomain.CurrentDomain.FriendlyName)} [<argument>] [<path>]");
+            Console.WriteLine("Arguments:");
+            Console.WriteLine(" -h\tHelp.");
+            Console.WriteLine(" -H\tOutput column headers.");
+            Console.WriteLine(" -H+\tOutput structure offsets and headers.");
+            Console.WriteLine(" -d\tDebug Mode, outputs hidden columns.");
+            Console.WriteLine(" -g\tGenerate .proto file.");
+            Console.WriteLine(" -p\tOutput in protobuf format.");
+            Environment.Exit(0);
+        }
+
+        private static void GenerateProto()
+        {
+            using (var t = new ProtoBufWriter("ds3ext.proto", "ds3ext"))
+            {
+                t.WriteMessage<EquipParamWeapon>("EquipParamWeapon");
+                t.WriteMessage<EquipParamAccessory>("EquipParamAccessory");
+                t.WriteMessage<EquipParamProtector>("EquipParamProtector");
+                t.WriteMessage<ReinforceParamWeapon>("ReinforceParamWeapon");
+                t.WriteMessage<AttackElementCorrectParam>("AttackElementCorrectParam");
+                t.WriteMessage<CalcCorrectGraph>("CalcCorrectGraph");
+                t.WriteMessage<Magic>("Magic");
+                t.WriteMessage<SpEffectParam>("SpEffectParam");
+                t.WriteMessage<NpcParam>("NpcParam");
+                t.WriteMessage<BehaviorParam>("BehaviorParam");
+                t.WriteMessage<AtkParam>("AtkParam");
+            }
         }
 
         private static bool IsFilePath(string str)
         {
             try
             {
-                var fullPath = Path.GetFullPath(str);
+                Path.GetFullPath(str);
                 return true;
             }
             catch (Exception)
@@ -209,31 +289,47 @@ namespace DarkSouls3ExtractionTool
 
         private static string ParseArgs(IEnumerable<string> args)
         {
+            var enumerable = args as string[] ?? args.ToArray();
+            if (!enumerable.Any())
+                return null;
+
             string path = null;
-            foreach(var arg in args)
+            switch (enumerable[0])
             {
-                switch(arg)
-                {
-                    case "-h":
-                        OutputHelp();
-                        Environment.Exit(0);
-                        break;
-                    case "-H":
-                        _arguments |= Arguments.Headers;
-                        break;
-                    case "-H+":
-                        _arguments |= Arguments.HeadersPlus;
-                        break;
-                    case "-d":
-                        _arguments |= Arguments.Debug;
-                        StructHelper.TypesToSkip = new List<Type>();
-                        break;
-                    default:
-                        if (IsFilePath(arg))
-                            path = arg;
-                        break;
-                }
+                case "-h":
+                    OutputHelpAndExit();
+                    break;
+                case "-H":
+                    _arguments |= Arguments.Headers;
+                    break;
+                case "-H+":
+                    _arguments |= Arguments.HeadersPlus;
+                    break;
+                case "-d":
+                    _arguments |= Arguments.Debug;
+                    StructHelper.TypesToSkip = new List<Type>();
+                    break;
+                case "-g":
+                    GenerateProto();
+                    Environment.Exit(0);
+                    break;
+                case "-p":
+                    _exportFormat = ExportFormat.Proto;
+                    break;
+                default:
+                    if (IsFilePath(enumerable[0]))
+                        path = enumerable[0];
+                    else OutputHelpAndExit();
+                    break;
             }
+
+            if (enumerable.Length > 1)
+            {
+                if (IsFilePath(enumerable[1]))
+                    path = enumerable[1];
+                else OutputHelpAndExit();
+            }
+
             return path;
         }
 
@@ -264,22 +360,19 @@ namespace DarkSouls3ExtractionTool
 
             //TryExportFmg("武器名.fmg"); // Weapon Names
             //TryExportFmg("NPC名.fmg"); // Npc Names
-            TryExportParam<EquipParamWeapon>("EquipParamWeapon.param");
-            TryExportParam<EquipParamAccesory>("EquipParamAccessory.param");
-            TryExportParam<EquipParamProtector>("EquipParamProtector.param");
-            TryExportParam<ReinforceParamWeapon>("ReinforceParamWeapon.param");
-            TryExportParam<AttackElementCorrectParam>("AttackElementCorrectParam.param");
-            TryExportParam<CalcCorrectGraph>("CalcCorrectGraph.param");
-            TryExportParam<Magic>("Magic.param");
-            TryExportParam<SpEffectParam>("SpEffectParam.param");
-            TryExportParam<NpcParam>("NpcParam.param");
-            TryExportParam<BehaviorParam>("BehaviorParam.param");
-            TryExportParam<BehaviorParam>("BehaviorParam_PC.param");
-            TryExportParam<AtkParam>("AtkParam_Pc.param");
-            TryExportParam<AtkParam>("AtkParam_Npc.param");
-            //var t = new ProtoBufWriter("test.proto");
-            //t.WriteMessage<EquipParamWeapon>("EquipParamWeapon");
-            //t.Dispose();
+            TryExportParam("EquipParamWeapon.param");
+            TryExportParam("EquipParamAccessory.param");
+            TryExportParam("EquipParamProtector.param");
+            TryExportParam("ReinforceParamWeapon.param");
+            TryExportParam("AttackElementCorrectParam.param");
+            TryExportParam("CalcCorrectGraph.param");
+            TryExportParam("Magic.param");
+            TryExportParam("SpEffectParam.param");
+            TryExportParam("NpcParam.param");
+            TryExportParam("BehaviorParam.param");
+            TryExportParam("BehaviorParam_PC.param");
+            TryExportParam("AtkParam_Pc.param");
+            TryExportParam("AtkParam_Npc.param");
         }
 
         public class Param<T>

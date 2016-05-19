@@ -111,7 +111,11 @@ namespace DarkSouls3ExtractionTool
             return GenerateListForeachField<T, Type>((list, field) =>
             {
                 if (field.FieldType.IsArray)
-                    list.Add(field.FieldType.GetElementType());
+                {
+                    var length = GetArrayLength(field);
+                    for (var i = 0; i < length; i++)
+                        list.Add(field.FieldType.GetElementType());
+                }
                 else list.Add(field.FieldType);
             });
         }
