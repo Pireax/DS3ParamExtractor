@@ -80,7 +80,7 @@ namespace DarkSouls3ExtractionTool
                     var tableOffset = BitConverter.ToInt32(binaryData, stringIndexTableBaseOffset + index * 8);
                     if (tableOffset != 0)
                     {
-                        var str = ReadNullTerminatedWideString(binaryData, tableOffset, 200);
+                        var str = ReadNullTerminatedWideString(binaryData, tableOffset, 2048);
                         exportFile.WriteLine("{0},{1},{2},{3},{4}", idMin, idMax, j, tableOffset, str);
                     }
 
