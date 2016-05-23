@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 
 namespace DarkSouls3ExtractionTool
 {
@@ -618,8 +618,98 @@ namespace DarkSouls3ExtractionTool
         [FieldOffset(0x15C)]
         public byte AddBehaviorJudgeId_add;
 
+        // Birdulon's https://docs.google.com/spreadsheets/d/1Wn2G4Z7yCbXdBjIdCUSusfvOWg75-kFbswKTPm4PcEQ/pubhtml
         [FieldOffset(0x160)]
-        public byte StrangeEnum;
+        public bool effectTargetSelf;
+        [FieldOffset(0x160)]
+        public bool effectTargetFriend;
+        [FieldOffset(0x160)]
+        public bool effectTargetEnemy;
+        [FieldOffset(0x160)]
+        public bool effectTargetPlayer;
+        [FieldOffset(0x160)]
+        public bool effectTargetAI;
+        [FieldOffset(0x160)]
+        public bool effectTargetLive;
+        [FieldOffset(0x160)]
+        public bool effectTargetGhost;
+        [FieldOffset(0x160)]
+        public bool effectTargetWhiteGhost;
+        [FieldOffset(0x161)]
+        public bool effectTargetBlackGhost;
+        [FieldOffset(0x161)]
+        public bool effectTargetAttacker;
+        [FieldOffset(0x161)]
+        public bool dispIconNonactive;
+        [FieldOffset(0x161)]
+        public bool useSpEffectEffect;
+        [FieldOffset(0x161)]
+        public bool bAdjustMagicAblity;
+        [FieldOffset(0x161)]
+        public bool bAdjustFaithAblity;
+        [FieldOffset(0x161)]
+        public bool bGameClearBonus;
+        [FieldOffset(0x161)]
+        public bool magParamChange;
+        [FieldOffset(0x162)]
+        public bool miracleParamChange;
+        [FieldOffset(0x162)]
+        public bool clearSoul;
+        [FieldOffset(0x162)]
+        public bool requestSOS;
+        [FieldOffset(0x162)]
+        public bool requestBlackSOS;
+        [FieldOffset(0x162)]
+        public bool requestForceJoinBlackSOS;
+        [FieldOffset(0x162)]
+        public bool requestKickSession;
+        [FieldOffset(0x162)]
+        public bool requestLeaveSession;
+        [FieldOffset(0x162)]
+        public bool requestNpcInveda;
+        [FieldOffset(0x163)]
+        public bool noDead;
+        [FieldOffset(0x163)]
+        public bool bCurrHPIndependeMaxHP;
+        [FieldOffset(0x163)]
+        public bool corrosionIgnore;
+        [FieldOffset(0x163)]
+        public bool sightSearchCutIgnore;
+        [FieldOffset(0x163)]
+        public bool hearingSearchCutIgnore;
+        [FieldOffset(0x163)]
+        public bool antiMagicIgnore;
+        [FieldOffset(0x163)]
+        public bool fakeTargetIgnore;
+        [FieldOffset(0x163)]
+        public bool fakeTargetIgnoreUndead;
+        [FieldOffset(0x164)]
+        public bool fakeTargetIgnoreAnimal;
+        [FieldOffset(0x164)]
+        public bool grabityIgnore;
+        [FieldOffset(0x164)]
+        public bool disablePoison;
+        [FieldOffset(0x164)]
+        public bool disableDisease;
+        [FieldOffset(0x164)]
+        public bool disableBlood;
+        [FieldOffset(0x164)]
+        public bool disableCurse;
+        [FieldOffset(0x164)]
+        public bool enableCharm;
+        [FieldOffset(0x164)]
+        public bool enableLifeTime;
+        [FieldOffset(0x165)]
+        public bool hasTarget;
+        [FieldOffset(0x165)]
+        public bool isFireDamageCancel;
+        [FieldOffset(0x165)]
+        public bool isExtendSpEffectLife;
+        [FieldOffset(0x165)]
+        public bool requestLeaveColiseumSession;
+        [FieldOffset(0x165)]
+        public byte pad1;
+
         [FieldOffset(0x1AC)]
         public int FrostAttackPower;
     }
