@@ -7,8 +7,8 @@
     <ProjectGuid>{F0FC2CF1-2701-4AE1-8C69-B8144FFDFBF3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DarkSouls3ExtractionTool</RootNamespace>
-    <AssemblyName>DarkSouls3ExtractionTool</AssemblyName>
+    <RootNamespace>BigHat</RootNamespace>
+    <AssemblyName>BigHat</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -48,16 +48,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryReaderExt.cs" />
+    <Compile Include="CsvExporter.cs" />
+    <Compile Include="FmgImporter.cs" />
+    <Compile Include="FmgEntry.cs" />
+    <Compile Include="IImporter.cs" />
+    <Compile Include="ParamAttributes.cs" />
     <Compile Include="Generated\Ds3Ext.cs" />
+    <Compile Include="ParamEntries\AtkParam.cs" />
+    <Compile Include="ParamEntries\AttackElementCorrectParam.cs" />
+    <Compile Include="ParamEntries\BehaviorParam.cs" />
+    <Compile Include="ParamEntries\CalcCorrectGraph.cs" />
+    <Compile Include="ParamEntries\EquipParamAccessory.cs" />
+    <Compile Include="ParamEntries\EquipParamProtector.cs" />
+    <Compile Include="ParamEntries\EquipParamWeapon.cs" />
+    <Compile Include="ParamEntries\Magic.cs" />
+    <Compile Include="ParamEntries\NpcParam.cs" />
+    <Compile Include="ParamEntries\ReinforceParamProtector.cs" />
+    <Compile Include="ParamEntries\SpEffectParam.cs" />
+    <Compile Include="ParamEntry.cs" />
+    <Compile Include="ParamImporter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoBufDataExporter.cs" />
     <Compile Include="ProtoBufWriter.cs" />
-    <Compile Include="StructureHelper.cs" />
-    <Compile Include="Structures.cs" />
+    <Compile Include="TableEntry.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ParamEntries\ReinforceParamWeapon.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
