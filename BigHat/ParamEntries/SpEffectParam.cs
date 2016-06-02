@@ -223,6 +223,8 @@
         public sbyte AddBehaviorJudgeId_condition;
         [PFieldOffset(0x15C)]
         public byte AddBehaviorJudgeId_add;
+
+        // Birdulon's https://docs.google.com/spreadsheets/d/1Wn2G4Z7yCbXdBjIdCUSusfvOWg75-kFbswKTPm4PcEQ/pubhtml
         [PBitfield(0, 0x15D)]
         public bool EffectTargetSelf;
         [PBitfield(1, 0x15D)]
@@ -239,11 +241,112 @@
         public bool EffectTargetGhost;
         [PBitfield(7, 0x15D)]
         public bool EffectTargetWhiteGhost;
-
-
-
+        [PBitfield(0, 0x15E)]
+        public bool EffectTargetBlackGhost;
+        [PBitfield(1, 0x15E)]
+        public bool EffectTargetAttacker;
+        [PBitfield(2, 0x15E)]
+        public bool DispIconNonActive;
+        [PBitfield(3, 0x15E)]
+        public bool UseSpEffectEffect;
+        [PBitfield(4, 0x15E)]
+        public bool AdjustMagicAbility;
+        [PBitfield(5, 0x15E)]
+        public bool AdjustFaithAbility;
+        [PBitfield(6, 0x15E)]
+        public bool GameClearBonus;
+        [PBitfield(7, 0x15E)]
+        public bool MagParamChange;
+        [PBitfield(0, 0x15F)]
+        public bool MiracleParamChange;
+        [PBitfield(1, 0x15F)]
+        public bool ClearSoul;
+        [PBitfield(2, 0x15F)]
+        public bool RequestSOS;
+        [PBitfield(3, 0x15F)]
+        public bool RequestBlackSOS;
+        [PBitfield(4, 0x15F)]
+        public bool RequestForceJoinBlackSOS;
+        [PBitfield(5, 0x15F)]
+        public bool RequestKickSession;
+        [PBitfield(6, 0x15F)]
+        public bool RequestLeaveSession;
+        [PBitfield(7, 0x15F)]
+        public bool RequestNpcInveda;
+        [PBitfield(0, 0x160)]
+        public bool NoDead;
+        [PBitfield(1, 0x160)]
+        public bool CurrHPIndependeMax;
         [PBitfield(2, 0x160)]
-        public bool StrangeEnum;
+        public bool CorrosionIgnore;
+        [PBitfield(3, 0x160)]
+        public bool SightSearchIgnore;
+        [PBitfield(4, 0x160)]
+        public bool HearingSearchCutIgnore;
+        [PBitfield(5, 0x160)]
+        public bool AntiMagicIgnore;
+        [PBitfield(6, 0x160)]
+        public bool FakeTargetIgnore;
+        [PBitfield(7, 0x160)]
+        public bool FakeTargetIgnoreUndead;
+        [PBitfield(0, 0x161)]
+        public bool FakeTargetIgnoreAnimal;
+        [PBitfield(1, 0x161)]
+        public bool GrabityIgnore;
+        [PBitfield(2, 0x161)]
+        public bool DisablePoison;
+        [PBitfield(3, 0x161)]
+        public bool DisableDisease;
+        [PBitfield(4, 0x161)]
+        public bool DisableBlood;
+        [PBitfield(5, 0x161)]
+        public bool DisableCurse;
+        [PBitfield(6, 0x161)]
+        public bool EnableCharm;
+        [PBitfield(7, 0x161)]
+        public bool EnableLifeTime;
+        [PBitfield(0, 0x162)]
+        public bool HasTarget;
+        [PBitfield(1, 0x162)]
+        public bool IsFireDamageCancel;
+        [PBitfield(2, 0x162)]
+        public bool IsExtendSpEffectLife;
+        [PBitfield(3, 0x162)]
+        public bool RequestLeaveColiseumSession;
+        [PBitfield(0, 0x163)]
+        public bool VowType0;
+        [PBitfield(1, 0x163)]
+        public bool VowType1;
+        [PBitfield(2, 0x163)]
+        public bool VowType2;
+        [PBitfield(3, 0x163)]
+        public bool VowType3;
+        [PBitfield(4, 0x163)]
+        public bool VowType4;
+        [PBitfield(5, 0x163)]
+        public bool VowType5;
+        [PBitfield(6, 0x163)]
+        public bool VowType6;
+        [PBitfield(7, 0x163)]
+        public bool VowType7;
+        [PBitfield(0, 0x164)]
+        public bool VowType8;
+        [PBitfield(1, 0x164)]
+        public bool VowType9;
+        [PBitfield(2, 0x164)]
+        public bool VowType10;
+        [PBitfield(3, 0x164)]
+        public bool VowType11;
+        [PBitfield(4, 0x164)]
+        public bool VowType12;
+        [PBitfield(5, 0x164)]
+        public bool VowType13;
+        [PBitfield(6, 0x164)]
+        public bool VowType14;
+        [PBitfield(7, 0x164)]
+        public bool VowType15;
+        //
+
         [PFieldOffset(0x1AC)]
         public int FrostAttackPower;
 
