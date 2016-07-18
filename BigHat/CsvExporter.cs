@@ -12,7 +12,7 @@ namespace BigHat
             bool includeOffsetRow = false, bool ignoreHidden = true)
         {
             if (data.Count < 1)
-                throw new ArgumentException("The list is empty.");
+                throw new ArgumentException("The data list is empty, file contains no data");
 
             var exportFile = File.CreateText(filename);
 

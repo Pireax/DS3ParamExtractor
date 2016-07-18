@@ -71,8 +71,25 @@ namespace BigHat
 
         private static void ExportDefault(string folderPath = "")
         {
-            TryExportFmg(Path.Combine(folderPath, "武器名.fmg")); // Weapon Names
             TryExportFmg(Path.Combine(folderPath, "NPC名.fmg")); // Npc Names
+            TryExportFmg(Path.Combine(folderPath, "アイテムうんちく.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "アイテム名.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "アイテム説明.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "アクセサリうんちく.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "アクセサリ名.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "アクセサリ説明.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "地名.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "武器うんちく.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "武器名.fmg")); // Weapon Names
+            // TryExportFmg(Path.Combine(folderPath, "武器説明.fmg")); // Doesn't contain anything as far as I can see.
+            TryExportFmg(Path.Combine(folderPath, "防具うんちく.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "防具名.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "防具説明.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "魔法うんちく.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "魔法名.fmg"));
+            TryExportFmg(Path.Combine(folderPath, "魔法説明.fmg"));
+
+
             TryExportParam(Path.Combine(folderPath, "EquipParamWeapon.param"));
             TryExportParam(Path.Combine(folderPath, "EquipParamAccessory.param"));
             TryExportParam(Path.Combine(folderPath, "EquipParamProtector.param"));
