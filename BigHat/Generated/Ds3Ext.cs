@@ -139,120 +139,158 @@ namespace Ds3Ext {
             "GCcgASgNEhAKCFVua25vd240GCggASgNEhAKCFVua25vd241GCkgASgNEhAK",
             "CFVua25vd242GCogASgNEhAKCFVua25vd243GCsgASgNEhAKCFVua25vd244",
             "GCwgASgNEhAKCFVua25vd245GC0gASgNEhEKCVVua25vd24xMBguIAEoDRIR",
-            "CglVbmtub3duMTEYLyABKA0i1wUKGUF0dGFja0VsZW1lbnRDb3JyZWN0UGFy",
-            "YW0SCgoCSWQYAiABKA0SDQoFSW5kZXgYAyABKBESDgoGT2Zmc2V0GAQgASgR",
-            "Eg8KB0JpdG1hc2sYBSABKBESCgoCdjAYBiABKBESCgoCdjEYByABKBESCgoC",
-            "djIYCCABKBESCgoCdjMYCSABKBESCgoCdjQYCiABKBESCgoCdjUYCyABKBES",
-            "CgoCdjYYDCABKBESCgoCdjcYDSABKBESCgoCdjgYDiABKBESCgoCdjkYDyAB",
-            "KBESCwoDdjEwGBAgASgREgsKA3YxMRgRIAEoERILCgN2MTIYEiABKBESCwoD",
-            "djEzGBMgASgREgsKA3YxNBgUIAEoERILCgN2MTUYFSABKBESCwoDdjE2GBYg",
-            "ASgREgsKA3YxNxgXIAEoERILCgN2MTgYGCABKBESCwoDdjE5GBkgASgREgsK",
-            "A3YyMBgaIAEoERILCgN2MjEYGyABKBESCwoDdjIyGBwgASgREgsKA3YyMxgd",
-            "IAEoERILCgN2MjQYHiABKBESCwoDdjI1GB8gASgREgsKA3YyNhggIAEoERIL",
-            "CgN2MjcYISABKBESCwoDdjI4GCIgASgREgsKA3YyORgjIAEoERILCgN2MzAY",
-            "JCABKBESCwoDdjMxGCUgASgREgsKA3YzMhgmIAEoERILCgN2MzMYJyABKBES",
-            "CwoDdjM0GCggASgREgsKA3YzNRgpIAEoERILCgN2MzYYKiABKBESCwoDdjM3",
-            "GCsgASgREgsKA3YzOBgsIAEoERILCgN2MzkYLSABKBESCwoDdjQwGC4gASgR",
-            "EgsKA3Y0MRgvIAEoERILCgN2NDIYMCABKBESCwoDdjQzGDEgASgREgsKA3Y0",
-            "NBgyIAEoERILCgN2NDUYMyABKBESCwoDdjQ2GDQgASgREgsKA3Y0Nxg1IAEo",
-            "ERILCgN2NDgYNiABKBESCwoDdjQ5GDcgASgRIqYEChBDYWxjQ29ycmVjdEdy",
-            "YXBoEgoKAklkGAIgASgNEg0KBUluZGV4GAMgASgREg4KBk9mZnNldBgEIAEo",
-            "ERIUCgxTdGFnZU1heFZhbDAYBSABKAISFAoMU3RhZ2VNYXhWYWwxGAYgASgC",
-            "EhQKDFN0YWdlTWF4VmFsMhgHIAEoAhIUCgxTdGFnZU1heFZhbDMYCCABKAIS",
-            "FAoMU3RhZ2VNYXhWYWw0GAkgASgCEhgKEFN0YWdlTWF4R3Jvd1ZhbDAYCiAB",
-            "KAISGAoQU3RhZ2VNYXhHcm93VmFsMRgLIAEoAhIYChBTdGFnZU1heEdyb3dW",
-            "YWwyGAwgASgCEhgKEFN0YWdlTWF4R3Jvd1ZhbDMYDSABKAISGAoQU3RhZ2VN",
-            "YXhHcm93VmFsNBgOIAEoAhIZChFBZGpQdF9tYXhHcm93VmFsMBgPIAEoAhIZ",
-            "ChFBZGpQdF9tYXhHcm93VmFsMRgQIAEoAhIZChFBZGpQdF9tYXhHcm93VmFs",
-            "MhgRIAEoAhIZChFBZGpQdF9tYXhHcm93VmFsMxgSIAEoAhIZChFBZGpQdF9t",
-            "YXhHcm93VmFsNBgTIAEoAhIdChVJbml0X2luY2xpbmF0aW9uX3NvdWwYFCAB",
-            "KAISGAoQQWRqdXN0bWVudF92YWx1ZRgVIAEoAhIgChhCb3VuZHJ5X2luY2xp",
-            "bmF0aW9uX3NvdWwYFiABKAISFQoNQm91bmRyeV92YWx1ZRgXIAEoAiKSBQoF",
-            "TWFnaWMSCgoCSWQYAiABKA0SDQoFSW5kZXgYAyABKBESDgoGT2Zmc2V0GAQg",
-            "ASgREhwKFFllc05vRGlhbG9nTWVzc2FnZUlkGAUgASgREh0KFUxpbWl0Q2Fu",
-            "Y2VsU3BFZmZlY3RJZBgGIAEoERIOCgZTb3J0SWQYByABKBESDQoFUmVmSWQY",
-            "CCABKBESCgoCTXAYCSABKBESDwoHU3RhbWluYRgKIAEoERIMCgRJY29uGAsg",
-            "ASgREhIKCkJlaGF2aW9ySWQYDCABKBESEgoKTXRybEl0ZW1JZBgNIAEoERIW",
-            "Cg5SZXBsYWNlTWFnaWNJZBgOIAEoERITCgtNYXhRdWFudGl0eRgPIAEoERIQ",
-            "CghIdW1hbml0eRgQIAEoDRIVCg1PdmVyRGV4dGVyaXR5GBEgASgNEhYKDlNm",
-            "eFZhcmlhdGlvbmlkGBIgASgNEhIKClNsb3RMZW5ndGgYEyABKA0SHAoUUmVx",
-            "dWlyZW1lbnRJbnRlbGxlY3QYFCABKA0SGAoQUmVxdWlyZW1lbnRGYWl0aBgV",
-            "IAEoDRIaChJBbmFsb2dEZXh0ZXJpdHlNaW4YFiABKA0SGgoSQW5hbG9nRGV4",
-            "dGVyaXR5TWF4GBcgASgNEhsKE0V6U3RhdGVCZWhhdmlvclR5cGUYGCABKA0S",
-            "EwoLUmVmQ2F0ZWdvcnkYGSABKA0SGAoQU3BFZmZlY3RDYXRlZ29yeRgaIAEo",
-            "DRIPCgdSZWZUeXBlGBsgASgNEhQKDE9wbWVNZW51VHlwZRgcIAEoDRIXCg9I",
-            "YXNTcEVmZmVjdFR5cGUYHSABKA0SFwoPUmVwbGFjZUNhdGVnb3J5GB4gASgN",
-            "EhgKEFVzZUxpbWl0Q2F0ZWdvcnkYHyABKA0i2RgKDVNwRWZmZWN0UGFyYW0S",
-            "CgoCSWQYAiABKA0SDQoFSW5kZXgYAyABKBESDgoGT2Zmc2V0GAQgASgREg4K",
-            "Bkljb25JZBgFIAEoERITCgtDb25kaXRpb25IcBgGIAEoAhIXCg9FZmZlY3RF",
-            "bmR1cmFuY2UYByABKAISFgoOTW90aW9uSW50ZXJ2YWwYCCABKBESEQoJTWF4",
-            "SHBSYXRlGAkgASgCEhEKCU1heE1wUmF0ZRgKIAEoAhIWCg5NYXhTdGFtaW5h",
-            "UmF0ZRgLIAEoAhIaChJTbGFzaERhbWFnZUN1dFJhdGUYDCABKAISGQoRQmxv",
-            "d0RhbWFnZUN1dFJhdGUYDSABKAISGwoTVGhydXN0RGFtYWdlQ3V0UmF0ZRgO",
-            "IAEoAhIcChROZXV0cmFsRGFtYWdlQ3V0UmF0ZRgPIAEoAhIaChJNYWdpY0Rh",
-            "bWFnZUN1dFJhdGUYECABKAISGQoRRmlyZURhbWFnZUN1dFJhdGUYESABKAIS",
-            "HAoUVGh1bmRlckRhbWFnZUN1dFJhdGUYEiABKAISGQoRUGh5c2ljc0F0dGFj",
-            "a1JhdGUYEyABKAISFwoPTWFnaWNBdHRhY2tSYXRlGBQgASgCEhYKDkZpcmVB",
-            "dHRhY2tSYXRlGBUgASgCEhkKEVRodW5kZXJBdHRhY2tSYXRlGBYgASgCEh4K",
-            "FlBoeXNpY3NBdHRhY2tQb3dlclJhdGUYFyABKAISHAoUTWFnaWNBdHRhY2tQ",
-            "b3dlclJhdGUYGCABKAISGwoTRmlyZUF0dGFja1Bvd2VyUmF0ZRgZIAEoAhIe",
-            "ChZUaHVuZGVyQXR0YWNrUG93ZXJSYXRlGBogASgCEhoKElBoeXNpY3NBdHRh",
-            "Y2tQb3dlchgbIAEoERIYChBNYWdpY0F0dGFja1Bvd2VyGBwgASgREhcKD0Zp",
-            "cmVBdHRhY2tQb3dlchgdIAEoERIaChJUaHVuZGVyQXR0YWNrUG93ZXIYHiAB",
-            "KBESHQoVUGh5c2ljc0RpZmZlcmVuY2VSYXRlGB8gASgCEhsKE01hZ2ljRGlm",
-            "ZmVyZW5jZVJhdGUYICABKAISGgoSRmlyZURpZmZlcmVuY2VSYXRlGCEgASgC",
-            "Eh0KFVRodW5kZXJEaWZmZXJlbmNlUmF0ZRgiIAEoAhIZChFQaHlzaWNzRGlm",
-            "ZmVyZW5jZRgjIAEoERIXCg9NYWdpY0RpZmZlcmVuY2UYJCABKBESFgoORmly",
-            "ZURpZmZlcmVuY2UYJSABKBESGQoRVGh1bmRlckRpZmZlcmVuY2UYJiABKBES",
-            "GQoRTm9HdWFyZERhbWFnZVJhdGUYJyABKAISGwoTVml0YWxTcG90Q2hhbmdl",
-            "UmF0ZRgoIAEoAhIcChROb3JtYWxTcG90Q2hhbmdlUmF0ZRgpIAEoAhIXCg9N",
-            "YXhIcENoYW5nZVJhdGUYKiABKAISEgoKQmVoYXZpb3JJZBgrIAEoERIUCgxD",
-            "aGFuZ2VIcFJhdGUYLCABKAISFQoNQ2hhbmdlSHBQb2ludBgtIAEoERIUCgxD",
-            "aGFuZ2VNcFJhdGUYLiABKAISFQoNQ2hhbmdlTXBQb2ludBgvIAEoERIcChRN",
-            "cFJlY292ZXJDaGFuZ2VTcGVlZBgwIAEoERIZChFDaGFuZ2VTdGFtaW5hUmF0",
-            "ZRgxIAEoAhIaChJDaGFuZ2VTdGFtaW5hUG9pbnQYMiABKBESIQoZU3RhbWlu",
-            "YVJlY292ZXJDaGFuZ2VTcGVlZBgzIAEoERIdChVNYWdpY0VmZmVjdFRpbWVD",
-            "aGFuZ2UYNCABKAISGAoQSW5zaWRlRHVyYWJpbGl0eRg1IAEoERIVCg1NYXhE",
-            "dXJhYmlsaXR5GDYgASgREhkKEVBvaXNvbkF0dGFja1Bvd2VyGDcgASgREhUK",
-            "DVJlZ2lzdElsbG5lc3MYOCABKBESGAoQQmxvb2RBdHRhY2tQb3dlchg5IAEo",
-            "ERITCgtSZWdpc3RDdXJzZRg6IAEoERIWCg5GYWxsRGFtYWdlUmF0ZRg7IAEo",
-            "AhIQCghTb3VsUmF0ZRg8IAEoAhIdChVFcXVpcFdlaWdodENoYW5nZVJhdGUY",
-            "PSABKAISHwoXQWxsSXRlbVdlaWdodENoYW5nZVJhdGUYPiABKAISDAoEU291",
-            "bBg/IAEoERIUCgxBbmltaWRPZmZzZXQYQCABKBESFAoMSGF2ZVNvdWxSYXRl",
-            "GEEgASgCEhYKDlRhcmdldFByaW9yaXR5GEIgASgCEhsKE1NpZ2h0U2VhcmNo",
-            "RW5lbXlDdXQYQyABKBESHQoVSGVhcmluZ1NlYXJjaEVuZW15Q3V0GEQgASgC",
-            "EhMKC0dyYWJpdHlSYXRlGEUgASgCEh4KFlJlZ2lzdFBvaXNvbkNoYW5nZVJh",
-            "dGUYRiABKAISHQoVUmVnaXN0VG94aWNDaGFuZ2VSYXRlGEcgASgCEh0KFVJl",
-            "Z2lzdEJsb29kQ2hhbmdlUmF0ZRhIIAEoAhIdChVSZWdpc3RDdXJzZUNoYW5n",
-            "ZVJhdGUYSSABKAISFQoNU291bFN0ZWFsUmF0ZRhKIAEoAhIZChFMaWZlUmVk",
-            "dWN0aW9uUmF0ZRhLIAEoAhIVCg1IcFJlY292ZXJSYXRlGEwgASgCEhkKEVJl",
-            "cGxhY2VTcEVmZmVjdElkGE0gASgREiEKGUN5Y2xlT2NjdXJyZW5jZVNwRWZm",
-            "ZWN0SWQYTiABKBESHwoXQXRrT2NjdXJyZW5jZVNwRWZmZWN0SWQYTyABKBES",
-            "HgoWR3VhcmREZWZGbGlja1Bvd2VyUmF0ZRhQIAEoAhIbChNHdWFyZFN0YW1p",
-            "bmFDdXRSYXRlGFEgASgCEhkKEVJheUNhc3RQYXNzZWRUaW1lGFIgASgREh0K",
-            "FUNoYW5nZVN1cGVyQXJtb3JQb2ludBhTIAEoERITCgtCb3dEaXN0UmF0ZRhU",
-            "IAEoERISCgpTcENhdGVnb3J5GFUgASgNEhgKEENhdGVnb3J5UHJpb3JpdHkY",
-            "ViABKA0SFAoMU2F2ZUNhdGVnb3J5GFcgASgREhcKD0NoYW5nZU1hZ2ljU2xv",
-            "dBhYIAEoDRIZChFDaGFuZ2VNaXJhY2xlU2xvdBhZIAEoDRIXCg9IZXJvUG9p",
-            "bnREYW1hZ2UYWiABKBESFQoNRGVmRmxpY2tQb3dlchhbIAEoDRIaChJGbGlj",
-            "a0RhbWFnZUN1dFJhdGUYXCABKA0SFwoPQmxvb2REYW1hZ2VSYXRlGF0gASgN",
-            "EhIKCkRtZ0x2X05vbmUYXiABKBESDwoHRG1nTHZfUxhfIAEoERIPCgdEbWdM",
-            "dl9NGGAgASgREg8KB0RtZ0x2X0wYYSABKBESEwoLRG1nTHZfQmxvd00YYiAB",
-            "KBESEgoKRG1nTHZfUHVzaBhjIAEoERIUCgxEbWdMdl9TdHJpa2UYZCABKBES",
-            "EwoLRG1nTHZfQmxvd1MYZSABKBESEQoJRG1nTHZfTWluGGYgASgREhYKDkRt",
-            "Z0x2X1VwcGVyY3V0GGcgASgREhQKDERtZ0x2X0Jsb3dMTBhoIAEoERIUCgxE",
-            "bWdMdl9CcmVhdGgYaSABKBESFAoMQXRrQXR0cmlidXRlGGogASgNEhMKC1Nw",
-            "QXR0cmlidXRlGGsgASgNEhEKCVN0YXRlSW5mbxhsIAEoDRIWCg5XZXBQYXJh",
-            "bUNoYW5nZRhtIAEoDRIQCghNb3ZlVHlwZRhuIAEoDRIZChFMaWZlUmVkdWN0",
-            "aW9uVHlwZRhvIAEoDRIWCg5UaHJvd0NvbmRpdGlvbhhwIAEoDRIkChxBZGRC",
-            "ZWhhdmlvckp1ZGdlSWRfY29uZGl0aW9uGHEgASgREh4KFkFkZEJlaGF2aW9y",
-            "SnVkZ2VJZF9hZGQYciABKA0SGAoQRWZmZWN0VGFyZ2V0U2VsZhhzIAEoCBIa",
-            "ChJFZmZlY3RUYXJnZXRGcmllbmQYdCABKAgSGQoRRWZmZWN0VGFyZ2V0RW5l",
-            "bXkYdSABKAgSGgoSRWZmZWN0VGFyZ2V0UGxheWVyGHYgASgIEhYKDkVmZmVj",
-            "dFRhcmdldEFJGHcgASgIEhgKEEVmZmVjdFRhcmdldExpdmUYeCABKAgSGQoR",
-            "RWZmZWN0VGFyZ2V0R2hvc3QYeSABKAgSHgoWRWZmZWN0VGFyZ2V0V2hpdGVH",
-            "aG9zdBh6IAEoCBITCgtTdHJhbmdlRW51bRh7IAEoCBIYChBGcm9zdEF0dGFj",
-            "a1Bvd2VyGHwgASgREhoKEkRhcmtEaWZmZXJlbmNlUmF0ZRh9IAEoAiL+JAoI",
+            "CglVbmtub3duMTEYLyABKA0iuAMKF1JlaW5mb3JjZVBhcmFtUHJvdGVjdG9y",
+            "EgoKAklkGAIgASgNEg0KBUluZGV4GAMgASgREg4KBk9mZnNldBgEIAEoERIW",
+            "Cg5QaHlzaWNzRGVmUmF0ZRgFIAEoAhIUCgxNYWdpY0RlZlJhdGUYBiABKAIS",
+            "EwoLRmlyZURlZlJhdGUYByABKAISFgoOVGh1bmRlckRlZlJhdGUYCCABKAIS",
+            "FAoMU2xhc2hEZWZSYXRlGAkgASgCEhUKDVN0cmlrZURlZlJhdGUYCiABKAIS",
+            "FQoNVGhydXN0RGVmUmF0ZRgLIAEoAhIYChBSZXNpc3RQb2lzb25SYXRlGAwg",
+            "ASgCEhkKEVJlc2lzdERpc2Vhc2VSYXRlGA0gASgCEhcKD1Jlc2lzdEJsb29k",
+            "UmF0ZRgOIAEoAhIXCg9SZXNpc3RDdXJzZVJhdGUYDyABKAISGwoTUmVzaWRl",
+            "bnRTcEVmZmVjdElkMRgQIAEoDRIbChNSZXNpZGVudFNwRWZmZWN0SWQyGBEg",
+            "ASgNEhsKE1Jlc2lkZW50U3BFZmZlY3RJZDMYEiABKA0SFQoNTWF0ZXJpYWxT",
+            "ZXRJZBgTIAEoDSLXBQoZQXR0YWNrRWxlbWVudENvcnJlY3RQYXJhbRIKCgJJ",
+            "ZBgCIAEoDRINCgVJbmRleBgDIAEoERIOCgZPZmZzZXQYBCABKBESDwoHQml0",
+            "bWFzaxgFIAEoERIKCgJ2MBgGIAEoERIKCgJ2MRgHIAEoERIKCgJ2MhgIIAEo",
+            "ERIKCgJ2MxgJIAEoERIKCgJ2NBgKIAEoERIKCgJ2NRgLIAEoERIKCgJ2NhgM",
+            "IAEoERIKCgJ2NxgNIAEoERIKCgJ2OBgOIAEoERIKCgJ2ORgPIAEoERILCgN2",
+            "MTAYECABKBESCwoDdjExGBEgASgREgsKA3YxMhgSIAEoERILCgN2MTMYEyAB",
+            "KBESCwoDdjE0GBQgASgREgsKA3YxNRgVIAEoERILCgN2MTYYFiABKBESCwoD",
+            "djE3GBcgASgREgsKA3YxOBgYIAEoERILCgN2MTkYGSABKBESCwoDdjIwGBog",
+            "ASgREgsKA3YyMRgbIAEoERILCgN2MjIYHCABKBESCwoDdjIzGB0gASgREgsK",
+            "A3YyNBgeIAEoERILCgN2MjUYHyABKBESCwoDdjI2GCAgASgREgsKA3YyNxgh",
+            "IAEoERILCgN2MjgYIiABKBESCwoDdjI5GCMgASgREgsKA3YzMBgkIAEoERIL",
+            "CgN2MzEYJSABKBESCwoDdjMyGCYgASgREgsKA3YzMxgnIAEoERILCgN2MzQY",
+            "KCABKBESCwoDdjM1GCkgASgREgsKA3YzNhgqIAEoERILCgN2MzcYKyABKBES",
+            "CwoDdjM4GCwgASgREgsKA3YzORgtIAEoERILCgN2NDAYLiABKBESCwoDdjQx",
+            "GC8gASgREgsKA3Y0MhgwIAEoERILCgN2NDMYMSABKBESCwoDdjQ0GDIgASgR",
+            "EgsKA3Y0NRgzIAEoERILCgN2NDYYNCABKBESCwoDdjQ3GDUgASgREgsKA3Y0",
+            "OBg2IAEoERILCgN2NDkYNyABKBEipgQKEENhbGNDb3JyZWN0R3JhcGgSCgoC",
+            "SWQYAiABKA0SDQoFSW5kZXgYAyABKBESDgoGT2Zmc2V0GAQgASgREhQKDFN0",
+            "YWdlTWF4VmFsMBgFIAEoAhIUCgxTdGFnZU1heFZhbDEYBiABKAISFAoMU3Rh",
+            "Z2VNYXhWYWwyGAcgASgCEhQKDFN0YWdlTWF4VmFsMxgIIAEoAhIUCgxTdGFn",
+            "ZU1heFZhbDQYCSABKAISGAoQU3RhZ2VNYXhHcm93VmFsMBgKIAEoAhIYChBT",
+            "dGFnZU1heEdyb3dWYWwxGAsgASgCEhgKEFN0YWdlTWF4R3Jvd1ZhbDIYDCAB",
+            "KAISGAoQU3RhZ2VNYXhHcm93VmFsMxgNIAEoAhIYChBTdGFnZU1heEdyb3dW",
+            "YWw0GA4gASgCEhkKEUFkalB0X21heEdyb3dWYWwwGA8gASgCEhkKEUFkalB0",
+            "X21heEdyb3dWYWwxGBAgASgCEhkKEUFkalB0X21heEdyb3dWYWwyGBEgASgC",
+            "EhkKEUFkalB0X21heEdyb3dWYWwzGBIgASgCEhkKEUFkalB0X21heEdyb3dW",
+            "YWw0GBMgASgCEh0KFUluaXRfaW5jbGluYXRpb25fc291bBgUIAEoAhIYChBB",
+            "ZGp1c3RtZW50X3ZhbHVlGBUgASgCEiAKGEJvdW5kcnlfaW5jbGluYXRpb25f",
+            "c291bBgWIAEoAhIVCg1Cb3VuZHJ5X3ZhbHVlGBcgASgCIpIFCgVNYWdpYxIK",
+            "CgJJZBgCIAEoDRINCgVJbmRleBgDIAEoERIOCgZPZmZzZXQYBCABKBESHAoU",
+            "WWVzTm9EaWFsb2dNZXNzYWdlSWQYBSABKBESHQoVTGltaXRDYW5jZWxTcEVm",
+            "ZmVjdElkGAYgASgREg4KBlNvcnRJZBgHIAEoERINCgVSZWZJZBgIIAEoERIK",
+            "CgJNcBgJIAEoERIPCgdTdGFtaW5hGAogASgREgwKBEljb24YCyABKBESEgoK",
+            "QmVoYXZpb3JJZBgMIAEoERISCgpNdHJsSXRlbUlkGA0gASgREhYKDlJlcGxh",
+            "Y2VNYWdpY0lkGA4gASgREhMKC01heFF1YW50aXR5GA8gASgREhAKCEh1bWFu",
+            "aXR5GBAgASgNEhUKDU92ZXJEZXh0ZXJpdHkYESABKA0SFgoOU2Z4VmFyaWF0",
+            "aW9uaWQYEiABKA0SEgoKU2xvdExlbmd0aBgTIAEoDRIcChRSZXF1aXJlbWVu",
+            "dEludGVsbGVjdBgUIAEoDRIYChBSZXF1aXJlbWVudEZhaXRoGBUgASgNEhoK",
+            "EkFuYWxvZ0RleHRlcml0eU1pbhgWIAEoDRIaChJBbmFsb2dEZXh0ZXJpdHlN",
+            "YXgYFyABKA0SGwoTRXpTdGF0ZUJlaGF2aW9yVHlwZRgYIAEoDRITCgtSZWZD",
+            "YXRlZ29yeRgZIAEoDRIYChBTcEVmZmVjdENhdGVnb3J5GBogASgNEg8KB1Jl",
+            "ZlR5cGUYGyABKA0SFAoMT3BtZU1lbnVUeXBlGBwgASgNEhcKD0hhc1NwRWZm",
+            "ZWN0VHlwZRgdIAEoDRIXCg9SZXBsYWNlQ2F0ZWdvcnkYHiABKA0SGAoQVXNl",
+            "TGltaXRDYXRlZ29yeRgfIAEoDSLMIgoNU3BFZmZlY3RQYXJhbRIKCgJJZBgC",
+            "IAEoDRINCgVJbmRleBgDIAEoERIOCgZPZmZzZXQYBCABKBESDgoGSWNvbklk",
+            "GAUgASgREhMKC0NvbmRpdGlvbkhwGAYgASgCEhcKD0VmZmVjdEVuZHVyYW5j",
+            "ZRgHIAEoAhIWCg5Nb3Rpb25JbnRlcnZhbBgIIAEoERIRCglNYXhIcFJhdGUY",
+            "CSABKAISEQoJTWF4TXBSYXRlGAogASgCEhYKDk1heFN0YW1pbmFSYXRlGAsg",
+            "ASgCEhoKElNsYXNoRGFtYWdlQ3V0UmF0ZRgMIAEoAhIZChFCbG93RGFtYWdl",
+            "Q3V0UmF0ZRgNIAEoAhIbChNUaHJ1c3REYW1hZ2VDdXRSYXRlGA4gASgCEhwK",
+            "FE5ldXRyYWxEYW1hZ2VDdXRSYXRlGA8gASgCEhoKEk1hZ2ljRGFtYWdlQ3V0",
+            "UmF0ZRgQIAEoAhIZChFGaXJlRGFtYWdlQ3V0UmF0ZRgRIAEoAhIcChRUaHVu",
+            "ZGVyRGFtYWdlQ3V0UmF0ZRgSIAEoAhIZChFQaHlzaWNzQXR0YWNrUmF0ZRgT",
+            "IAEoAhIXCg9NYWdpY0F0dGFja1JhdGUYFCABKAISFgoORmlyZUF0dGFja1Jh",
+            "dGUYFSABKAISGQoRVGh1bmRlckF0dGFja1JhdGUYFiABKAISHgoWUGh5c2lj",
+            "c0F0dGFja1Bvd2VyUmF0ZRgXIAEoAhIcChRNYWdpY0F0dGFja1Bvd2VyUmF0",
+            "ZRgYIAEoAhIbChNGaXJlQXR0YWNrUG93ZXJSYXRlGBkgASgCEh4KFlRodW5k",
+            "ZXJBdHRhY2tQb3dlclJhdGUYGiABKAISGgoSUGh5c2ljc0F0dGFja1Bvd2Vy",
+            "GBsgASgREhgKEE1hZ2ljQXR0YWNrUG93ZXIYHCABKBESFwoPRmlyZUF0dGFj",
+            "a1Bvd2VyGB0gASgREhoKElRodW5kZXJBdHRhY2tQb3dlchgeIAEoERIdChVQ",
+            "aHlzaWNzRGlmZmVyZW5jZVJhdGUYHyABKAISGwoTTWFnaWNEaWZmZXJlbmNl",
+            "UmF0ZRggIAEoAhIaChJGaXJlRGlmZmVyZW5jZVJhdGUYISABKAISHQoVVGh1",
+            "bmRlckRpZmZlcmVuY2VSYXRlGCIgASgCEhkKEVBoeXNpY3NEaWZmZXJlbmNl",
+            "GCMgASgREhcKD01hZ2ljRGlmZmVyZW5jZRgkIAEoERIWCg5GaXJlRGlmZmVy",
+            "ZW5jZRglIAEoERIZChFUaHVuZGVyRGlmZmVyZW5jZRgmIAEoERIZChFOb0d1",
+            "YXJkRGFtYWdlUmF0ZRgnIAEoAhIbChNWaXRhbFNwb3RDaGFuZ2VSYXRlGCgg",
+            "ASgCEhwKFE5vcm1hbFNwb3RDaGFuZ2VSYXRlGCkgASgCEhcKD01heEhwQ2hh",
+            "bmdlUmF0ZRgqIAEoAhISCgpCZWhhdmlvcklkGCsgASgREhQKDENoYW5nZUhw",
+            "UmF0ZRgsIAEoAhIVCg1DaGFuZ2VIcFBvaW50GC0gASgREhQKDENoYW5nZU1w",
+            "UmF0ZRguIAEoAhIVCg1DaGFuZ2VNcFBvaW50GC8gASgREhwKFE1wUmVjb3Zl",
+            "ckNoYW5nZVNwZWVkGDAgASgREhkKEUNoYW5nZVN0YW1pbmFSYXRlGDEgASgC",
+            "EhoKEkNoYW5nZVN0YW1pbmFQb2ludBgyIAEoERIhChlTdGFtaW5hUmVjb3Zl",
+            "ckNoYW5nZVNwZWVkGDMgASgREh0KFU1hZ2ljRWZmZWN0VGltZUNoYW5nZRg0",
+            "IAEoAhIYChBJbnNpZGVEdXJhYmlsaXR5GDUgASgREhUKDU1heER1cmFiaWxp",
+            "dHkYNiABKBESGQoRUG9pc29uQXR0YWNrUG93ZXIYNyABKBESFQoNUmVnaXN0",
+            "SWxsbmVzcxg4IAEoERIYChBCbG9vZEF0dGFja1Bvd2VyGDkgASgREhMKC1Jl",
+            "Z2lzdEN1cnNlGDogASgREhYKDkZhbGxEYW1hZ2VSYXRlGDsgASgCEhAKCFNv",
+            "dWxSYXRlGDwgASgCEh0KFUVxdWlwV2VpZ2h0Q2hhbmdlUmF0ZRg9IAEoAhIf",
+            "ChdBbGxJdGVtV2VpZ2h0Q2hhbmdlUmF0ZRg+IAEoAhIMCgRTb3VsGD8gASgR",
+            "EhQKDEFuaW1pZE9mZnNldBhAIAEoERIUCgxIYXZlU291bFJhdGUYQSABKAIS",
+            "FgoOVGFyZ2V0UHJpb3JpdHkYQiABKAISGwoTU2lnaHRTZWFyY2hFbmVteUN1",
+            "dBhDIAEoERIdChVIZWFyaW5nU2VhcmNoRW5lbXlDdXQYRCABKAISEwoLR3Jh",
+            "Yml0eVJhdGUYRSABKAISHgoWUmVnaXN0UG9pc29uQ2hhbmdlUmF0ZRhGIAEo",
+            "AhIdChVSZWdpc3RUb3hpY0NoYW5nZVJhdGUYRyABKAISHQoVUmVnaXN0Qmxv",
+            "b2RDaGFuZ2VSYXRlGEggASgCEh0KFVJlZ2lzdEN1cnNlQ2hhbmdlUmF0ZRhJ",
+            "IAEoAhIVCg1Tb3VsU3RlYWxSYXRlGEogASgCEhkKEUxpZmVSZWR1Y3Rpb25S",
+            "YXRlGEsgASgCEhUKDUhwUmVjb3ZlclJhdGUYTCABKAISGQoRUmVwbGFjZVNw",
+            "RWZmZWN0SWQYTSABKBESIQoZQ3ljbGVPY2N1cnJlbmNlU3BFZmZlY3RJZBhO",
+            "IAEoERIfChdBdGtPY2N1cnJlbmNlU3BFZmZlY3RJZBhPIAEoERIeChZHdWFy",
+            "ZERlZkZsaWNrUG93ZXJSYXRlGFAgASgCEhsKE0d1YXJkU3RhbWluYUN1dFJh",
+            "dGUYUSABKAISGQoRUmF5Q2FzdFBhc3NlZFRpbWUYUiABKBESHQoVQ2hhbmdl",
+            "U3VwZXJBcm1vclBvaW50GFMgASgREhMKC0Jvd0Rpc3RSYXRlGFQgASgREhIK",
+            "ClNwQ2F0ZWdvcnkYVSABKA0SGAoQQ2F0ZWdvcnlQcmlvcml0eRhWIAEoDRIU",
+            "CgxTYXZlQ2F0ZWdvcnkYVyABKBESFwoPQ2hhbmdlTWFnaWNTbG90GFggASgN",
+            "EhkKEUNoYW5nZU1pcmFjbGVTbG90GFkgASgNEhcKD0hlcm9Qb2ludERhbWFn",
+            "ZRhaIAEoERIVCg1EZWZGbGlja1Bvd2VyGFsgASgNEhoKEkZsaWNrRGFtYWdl",
+            "Q3V0UmF0ZRhcIAEoDRIXCg9CbG9vZERhbWFnZVJhdGUYXSABKA0SEgoKRG1n",
+            "THZfTm9uZRheIAEoERIPCgdEbWdMdl9TGF8gASgREg8KB0RtZ0x2X00YYCAB",
+            "KBESDwoHRG1nTHZfTBhhIAEoERITCgtEbWdMdl9CbG93TRhiIAEoERISCgpE",
+            "bWdMdl9QdXNoGGMgASgREhQKDERtZ0x2X1N0cmlrZRhkIAEoERITCgtEbWdM",
+            "dl9CbG93UxhlIAEoERIRCglEbWdMdl9NaW4YZiABKBESFgoORG1nTHZfVXBw",
+            "ZXJjdXQYZyABKBESFAoMRG1nTHZfQmxvd0xMGGggASgREhQKDERtZ0x2X0Jy",
+            "ZWF0aBhpIAEoERIUCgxBdGtBdHRyaWJ1dGUYaiABKA0SEwoLU3BBdHRyaWJ1",
+            "dGUYayABKA0SEQoJU3RhdGVJbmZvGGwgASgNEhYKDldlcFBhcmFtQ2hhbmdl",
+            "GG0gASgNEhAKCE1vdmVUeXBlGG4gASgNEhkKEUxpZmVSZWR1Y3Rpb25UeXBl",
+            "GG8gASgNEhYKDlRocm93Q29uZGl0aW9uGHAgASgNEiQKHEFkZEJlaGF2aW9y",
+            "SnVkZ2VJZF9jb25kaXRpb24YcSABKBESHgoWQWRkQmVoYXZpb3JKdWRnZUlk",
+            "X2FkZBhyIAEoDRIYChBFZmZlY3RUYXJnZXRTZWxmGHMgASgIEhoKEkVmZmVj",
+            "dFRhcmdldEZyaWVuZBh0IAEoCBIZChFFZmZlY3RUYXJnZXRFbmVteRh1IAEo",
+            "CBIaChJFZmZlY3RUYXJnZXRQbGF5ZXIYdiABKAgSFgoORWZmZWN0VGFyZ2V0",
+            "QUkYdyABKAgSGAoQRWZmZWN0VGFyZ2V0TGl2ZRh4IAEoCBIZChFFZmZlY3RU",
+            "YXJnZXRHaG9zdBh5IAEoCBIeChZFZmZlY3RUYXJnZXRXaGl0ZUdob3N0GHog",
+            "ASgIEh4KFkVmZmVjdFRhcmdldEJsYWNrR2hvc3QYeyABKAgSHAoURWZmZWN0",
+            "VGFyZ2V0QXR0YWNrZXIYfCABKAgSGQoRRGlzcEljb25Ob25BY3RpdmUYfSAB",
+            "KAgSGQoRVXNlU3BFZmZlY3RFZmZlY3QYfiABKAgSGgoSQWRqdXN0TWFnaWNB",
+            "YmlsaXR5GH8gASgIEhsKEkFkanVzdEZhaXRoQWJpbGl0eRiAASABKAgSFwoO",
+            "R2FtZUNsZWFyQm9udXMYgQEgASgIEhcKDk1hZ1BhcmFtQ2hhbmdlGIIBIAEo",
+            "CBIbChJNaXJhY2xlUGFyYW1DaGFuZ2UYgwEgASgIEhIKCUNsZWFyU291bBiE",
+            "ASABKAgSEwoKUmVxdWVzdFNPUxiFASABKAgSGAoPUmVxdWVzdEJsYWNrU09T",
+            "GIYBIAEoCBIhChhSZXF1ZXN0Rm9yY2VKb2luQmxhY2tTT1MYhwEgASgIEhsK",
+            "ElJlcXVlc3RLaWNrU2Vzc2lvbhiIASABKAgSHAoTUmVxdWVzdExlYXZlU2Vz",
+            "c2lvbhiJASABKAgSGQoQUmVxdWVzdE5wY0ludmVkYRiKASABKAgSDwoGTm9E",
+            "ZWFkGIsBIAEoCBIbChJDdXJySFBJbmRlcGVuZGVNYXgYjAEgASgIEhgKD0Nv",
+            "cnJvc2lvbklnbm9yZRiNASABKAgSGgoRU2lnaHRTZWFyY2hJZ25vcmUYjgEg",
+            "ASgIEh8KFkhlYXJpbmdTZWFyY2hDdXRJZ25vcmUYjwEgASgIEhgKD0FudGlN",
+            "YWdpY0lnbm9yZRiQASABKAgSGQoQRmFrZVRhcmdldElnbm9yZRiRASABKAgS",
+            "HwoWRmFrZVRhcmdldElnbm9yZVVuZGVhZBiSASABKAgSHwoWRmFrZVRhcmdl",
+            "dElnbm9yZUFuaW1hbBiTASABKAgSFgoNR3JhYml0eUlnbm9yZRiUASABKAgS",
+            "FgoNRGlzYWJsZVBvaXNvbhiVASABKAgSFwoORGlzYWJsZURpc2Vhc2UYlgEg",
+            "ASgIEhUKDERpc2FibGVCbG9vZBiXASABKAgSFQoMRGlzYWJsZUN1cnNlGJgB",
+            "IAEoCBIUCgtFbmFibGVDaGFybRiZASABKAgSFwoORW5hYmxlTGlmZVRpbWUY",
+            "mgEgASgIEhIKCUhhc1RhcmdldBibASABKAgSGwoSSXNGaXJlRGFtYWdlQ2Fu",
+            "Y2VsGJwBIAEoCBIdChRJc0V4dGVuZFNwRWZmZWN0TGlmZRidASABKAgSJAob",
+            "UmVxdWVzdExlYXZlQ29saXNldW1TZXNzaW9uGJ4BIAEoCBIRCghWb3dUeXBl",
+            "MBifASABKAgSEQoIVm93VHlwZTEYoAEgASgIEhEKCFZvd1R5cGUyGKEBIAEo",
+            "CBIRCghWb3dUeXBlMxiiASABKAgSEQoIVm93VHlwZTQYowEgASgIEhEKCFZv",
+            "d1R5cGU1GKQBIAEoCBIRCghWb3dUeXBlNhilASABKAgSEQoIVm93VHlwZTcY",
+            "pgEgASgIEhEKCFZvd1R5cGU4GKcBIAEoCBIRCghWb3dUeXBlORioASABKAgS",
+            "EgoJVm93VHlwZTEwGKkBIAEoCBISCglWb3dUeXBlMTEYqgEgASgIEhIKCVZv",
+            "d1R5cGUxMhirASABKAgSEgoJVm93VHlwZTEzGKwBIAEoCBISCglWb3dUeXBl",
+            "MTQYrQEgASgIEhIKCVZvd1R5cGUxNRiuASABKAgSGQoQRnJvc3RBdHRhY2tQ",
+            "b3dlchivASABKBESGwoSRGFya0RpZmZlcmVuY2VSYXRlGLABIAEoAiL+JAoI",
             "TnBjUGFyYW0SCgoCSWQYAiABKA0SDQoFSW5kZXgYAyABKBESDgoGT2Zmc2V0",
             "GAQgASgREhsKE0JlaGF2aW9yVmFyaWF0aW9uSWQYBSABKBESEQoJQWlUaGlu",
             "a0lkGAYgASgREg4KBk5hbWVJZBgHIAEoERIUCgxUdXJuVmVsb2NpdHkYCCAB",
@@ -528,10 +566,11 @@ namespace Ds3Ext {
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.EquipParamAccessory), global::Ds3Ext.EquipParamAccessory.Parser, new[]{ "Id", "Index", "Offset", "RefId", "SfxVariationId", "Weight", "BehaviorId", "BasicPrice", "SellValue", "SortId", "QwcId", "EquipModelId", "IconId", "ShopLv", "TrophySGradeId", "ThrophySeqId", "EquipModelCategory", "EquipModelGender", "AccessoryCategory", "RefCategory", "SpEffectCategory" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.EquipParamProtector), global::Ds3Ext.EquipParamProtector.Parser, new[]{ "Id", "Index", "Offset", "SortId", "WanderingEquipId", "VagrantItemLotId", "VagrantBonusEneDropItemLotId", "VagrantItemEneDropItemLotId", "FixPrice", "BasicPrice", "SellValue", "Weight", "ResidentSpEffectId1", "ResidentSpEffectId2", "ResidentSpEffectId3", "MaterialSetId", "PartsDamageRate", "ResistPoison", "ResistToxic", "ResistBlood", "ResistCurse", "DefensePhysics", "DefenseSlash", "DefenseStrike", "DefenseThrust", "DefenseMagic", "DefenseFire", "DefenseThunder", "EquipModelId", "KnockbackBounceRate", "Durability", "DurabilityMax", "SaDurability", "Poise", "DefenseDark", "ResistFrost" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.ReinforceParamWeapon), global::Ds3Ext.ReinforceParamWeapon.Parser, new[]{ "Id", "Index", "Offset", "PhysicsAtkRate", "MagicAtkRate", "FireAtkRate", "ThunderAtkRate", "StaminaAtkRate", "SaWeaponAtkRate", "SaDurabilityRate", "CorrectStrengthRate", "CorrectAgilityRate", "CorrectMagicRate", "CorrectFaithRate", "PhysicsGuardCutRate", "MagicGuardCutRate", "FireGuardCutRate", "ThunderGuardCutRate", "PoisonGuardResistRate", "DiseaseGuardResistRate", "BloodGuardResistRate", "CurseGuardResistRate", "StaminaGuardDefRate", "SpEffectId1", "SpEffectId2", "SpEffectId3", "ResidentSpEffectId1", "ResidentSpEffectId2", "ResidentSpEffectId3", "MaterialSetId1", "MaterialSetId2", "DarkAtkRate", "DarkGuardResistRate", "CorrectLuckRate", "Unknown0", "Unknown1", "Unknown2", "Unknown3", "Unknown4", "Unknown5", "Unknown6", "Unknown7", "Unknown8", "Unknown9", "Unknown10", "Unknown11" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.ReinforceParamProtector), global::Ds3Ext.ReinforceParamProtector.Parser, new[]{ "Id", "Index", "Offset", "PhysicsDefRate", "MagicDefRate", "FireDefRate", "ThunderDefRate", "SlashDefRate", "StrikeDefRate", "ThrustDefRate", "ResistPoisonRate", "ResistDiseaseRate", "ResistBloodRate", "ResistCurseRate", "ResidentSpEffectId1", "ResidentSpEffectId2", "ResidentSpEffectId3", "MaterialSetId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.AttackElementCorrectParam), global::Ds3Ext.AttackElementCorrectParam.Parser, new[]{ "Id", "Index", "Offset", "Bitmask", "V0", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22", "V23", "V24", "V25", "V26", "V27", "V28", "V29", "V30", "V31", "V32", "V33", "V34", "V35", "V36", "V37", "V38", "V39", "V40", "V41", "V42", "V43", "V44", "V45", "V46", "V47", "V48", "V49" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.CalcCorrectGraph), global::Ds3Ext.CalcCorrectGraph.Parser, new[]{ "Id", "Index", "Offset", "StageMaxVal0", "StageMaxVal1", "StageMaxVal2", "StageMaxVal3", "StageMaxVal4", "StageMaxGrowVal0", "StageMaxGrowVal1", "StageMaxGrowVal2", "StageMaxGrowVal3", "StageMaxGrowVal4", "AdjPtMaxGrowVal0", "AdjPtMaxGrowVal1", "AdjPtMaxGrowVal2", "AdjPtMaxGrowVal3", "AdjPtMaxGrowVal4", "InitInclinationSoul", "AdjustmentValue", "BoundryInclinationSoul", "BoundryValue" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.Magic), global::Ds3Ext.Magic.Parser, new[]{ "Id", "Index", "Offset", "YesNoDialogMessageId", "LimitCancelSpEffectId", "SortId", "RefId", "Mp", "Stamina", "Icon", "BehaviorId", "MtrlItemId", "ReplaceMagicId", "MaxQuantity", "Humanity", "OverDexterity", "SfxVariationid", "SlotLength", "RequirementIntellect", "RequirementFaith", "AnalogDexterityMin", "AnalogDexterityMax", "EzStateBehaviorType", "RefCategory", "SpEffectCategory", "RefType", "OpmeMenuType", "HasSpEffectType", "ReplaceCategory", "UseLimitCategory" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.SpEffectParam), global::Ds3Ext.SpEffectParam.Parser, new[]{ "Id", "Index", "Offset", "IconId", "ConditionHp", "EffectEndurance", "MotionInterval", "MaxHpRate", "MaxMpRate", "MaxStaminaRate", "SlashDamageCutRate", "BlowDamageCutRate", "ThrustDamageCutRate", "NeutralDamageCutRate", "MagicDamageCutRate", "FireDamageCutRate", "ThunderDamageCutRate", "PhysicsAttackRate", "MagicAttackRate", "FireAttackRate", "ThunderAttackRate", "PhysicsAttackPowerRate", "MagicAttackPowerRate", "FireAttackPowerRate", "ThunderAttackPowerRate", "PhysicsAttackPower", "MagicAttackPower", "FireAttackPower", "ThunderAttackPower", "PhysicsDifferenceRate", "MagicDifferenceRate", "FireDifferenceRate", "ThunderDifferenceRate", "PhysicsDifference", "MagicDifference", "FireDifference", "ThunderDifference", "NoGuardDamageRate", "VitalSpotChangeRate", "NormalSpotChangeRate", "MaxHpChangeRate", "BehaviorId", "ChangeHpRate", "ChangeHpPoint", "ChangeMpRate", "ChangeMpPoint", "MpRecoverChangeSpeed", "ChangeStaminaRate", "ChangeStaminaPoint", "StaminaRecoverChangeSpeed", "MagicEffectTimeChange", "InsideDurability", "MaxDurability", "PoisonAttackPower", "RegistIllness", "BloodAttackPower", "RegistCurse", "FallDamageRate", "SoulRate", "EquipWeightChangeRate", "AllItemWeightChangeRate", "Soul", "AnimidOffset", "HaveSoulRate", "TargetPriority", "SightSearchEnemyCut", "HearingSearchEnemyCut", "GrabityRate", "RegistPoisonChangeRate", "RegistToxicChangeRate", "RegistBloodChangeRate", "RegistCurseChangeRate", "SoulStealRate", "LifeReductionRate", "HpRecoverRate", "ReplaceSpEffectId", "CycleOccurrenceSpEffectId", "AtkOccurrenceSpEffectId", "GuardDefFlickPowerRate", "GuardStaminaCutRate", "RayCastPassedTime", "ChangeSuperArmorPoint", "BowDistRate", "SpCategory", "CategoryPriority", "SaveCategory", "ChangeMagicSlot", "ChangeMiracleSlot", "HeroPointDamage", "DefFlickPower", "FlickDamageCutRate", "BloodDamageRate", "DmgLvNone", "DmgLvS", "DmgLvM", "DmgLvL", "DmgLvBlowM", "DmgLvPush", "DmgLvStrike", "DmgLvBlowS", "DmgLvMin", "DmgLvUppercut", "DmgLvBlowLL", "DmgLvBreath", "AtkAttribute", "SpAttribute", "StateInfo", "WepParamChange", "MoveType", "LifeReductionType", "ThrowCondition", "AddBehaviorJudgeIdCondition", "AddBehaviorJudgeIdAdd", "EffectTargetSelf", "EffectTargetFriend", "EffectTargetEnemy", "EffectTargetPlayer", "EffectTargetAI", "EffectTargetLive", "EffectTargetGhost", "EffectTargetWhiteGhost", "StrangeEnum", "FrostAttackPower", "DarkDifferenceRate" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.SpEffectParam), global::Ds3Ext.SpEffectParam.Parser, new[]{ "Id", "Index", "Offset", "IconId", "ConditionHp", "EffectEndurance", "MotionInterval", "MaxHpRate", "MaxMpRate", "MaxStaminaRate", "SlashDamageCutRate", "BlowDamageCutRate", "ThrustDamageCutRate", "NeutralDamageCutRate", "MagicDamageCutRate", "FireDamageCutRate", "ThunderDamageCutRate", "PhysicsAttackRate", "MagicAttackRate", "FireAttackRate", "ThunderAttackRate", "PhysicsAttackPowerRate", "MagicAttackPowerRate", "FireAttackPowerRate", "ThunderAttackPowerRate", "PhysicsAttackPower", "MagicAttackPower", "FireAttackPower", "ThunderAttackPower", "PhysicsDifferenceRate", "MagicDifferenceRate", "FireDifferenceRate", "ThunderDifferenceRate", "PhysicsDifference", "MagicDifference", "FireDifference", "ThunderDifference", "NoGuardDamageRate", "VitalSpotChangeRate", "NormalSpotChangeRate", "MaxHpChangeRate", "BehaviorId", "ChangeHpRate", "ChangeHpPoint", "ChangeMpRate", "ChangeMpPoint", "MpRecoverChangeSpeed", "ChangeStaminaRate", "ChangeStaminaPoint", "StaminaRecoverChangeSpeed", "MagicEffectTimeChange", "InsideDurability", "MaxDurability", "PoisonAttackPower", "RegistIllness", "BloodAttackPower", "RegistCurse", "FallDamageRate", "SoulRate", "EquipWeightChangeRate", "AllItemWeightChangeRate", "Soul", "AnimidOffset", "HaveSoulRate", "TargetPriority", "SightSearchEnemyCut", "HearingSearchEnemyCut", "GrabityRate", "RegistPoisonChangeRate", "RegistToxicChangeRate", "RegistBloodChangeRate", "RegistCurseChangeRate", "SoulStealRate", "LifeReductionRate", "HpRecoverRate", "ReplaceSpEffectId", "CycleOccurrenceSpEffectId", "AtkOccurrenceSpEffectId", "GuardDefFlickPowerRate", "GuardStaminaCutRate", "RayCastPassedTime", "ChangeSuperArmorPoint", "BowDistRate", "SpCategory", "CategoryPriority", "SaveCategory", "ChangeMagicSlot", "ChangeMiracleSlot", "HeroPointDamage", "DefFlickPower", "FlickDamageCutRate", "BloodDamageRate", "DmgLvNone", "DmgLvS", "DmgLvM", "DmgLvL", "DmgLvBlowM", "DmgLvPush", "DmgLvStrike", "DmgLvBlowS", "DmgLvMin", "DmgLvUppercut", "DmgLvBlowLL", "DmgLvBreath", "AtkAttribute", "SpAttribute", "StateInfo", "WepParamChange", "MoveType", "LifeReductionType", "ThrowCondition", "AddBehaviorJudgeIdCondition", "AddBehaviorJudgeIdAdd", "EffectTargetSelf", "EffectTargetFriend", "EffectTargetEnemy", "EffectTargetPlayer", "EffectTargetAI", "EffectTargetLive", "EffectTargetGhost", "EffectTargetWhiteGhost", "EffectTargetBlackGhost", "EffectTargetAttacker", "DispIconNonActive", "UseSpEffectEffect", "AdjustMagicAbility", "AdjustFaithAbility", "GameClearBonus", "MagParamChange", "MiracleParamChange", "ClearSoul", "RequestSOS", "RequestBlackSOS", "RequestForceJoinBlackSOS", "RequestKickSession", "RequestLeaveSession", "RequestNpcInveda", "NoDead", "CurrHPIndependeMax", "CorrosionIgnore", "SightSearchIgnore", "HearingSearchCutIgnore", "AntiMagicIgnore", "FakeTargetIgnore", "FakeTargetIgnoreUndead", "FakeTargetIgnoreAnimal", "GrabityIgnore", "DisablePoison", "DisableDisease", "DisableBlood", "DisableCurse", "EnableCharm", "EnableLifeTime", "HasTarget", "IsFireDamageCancel", "IsExtendSpEffectLife", "RequestLeaveColiseumSession", "VowType0", "VowType1", "VowType2", "VowType3", "VowType4", "VowType5", "VowType6", "VowType7", "VowType8", "VowType9", "VowType10", "VowType11", "VowType12", "VowType13", "VowType14", "VowType15", "FrostAttackPower", "DarkDifferenceRate" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.NpcParam), global::Ds3Ext.NpcParam.Parser, new[]{ "Id", "Index", "Offset", "BehaviorVariationId", "AiThinkId", "NameId", "TurnVelocity", "HitHeight", "HitRadius", "Weight", "HitYOffset", "Hp", "Mp", "GetSoul", "ItemLotId1", "ItemLotId2", "ItemLotId3", "ItemLotId4", "ItemLotId5", "ItemLotId6", "HumanityLotId", "SpEffectID0", "SpEffectID1", "SpEffectID2", "SpEffectID3", "SpEffectID4", "SpEffectID5", "SpEffectID6", "SpEffectID7", "GameClearSpEffectID", "PhysGuardCutRate", "MagGuardCutRate", "FireGuardCutRate", "ThunGuardCutRate", "AnimIdOffset", "MoveAnimId", "SpMoveAnimId1", "SpMoveAnimId2", "NetworkWarpDist", "DbgBehaviorR1", "DbgBehaviorL1", "DbgBehaviorR2", "DbgBehaviorL2", "DbgBehaviorRL", "DbgBehaviorRR", "DbgBehaviorRD", "DbgBehaviorRU", "DbgBehaviorLL", "DbgBehaviorLR", "DbgBehaviorLD", "DbgBehaviorLU", "AnimIdOffset2", "PartsDamageRate1", "PartsDamageRate2", "PartsDamageRate3", "PartsDamageRate4", "PartsDamageRate5", "PartsDamageRate6", "PartsDamageRate7", "PartsDamageRate8", "WeakPartsDamageRate", "SuperArmorRecoverCorrection", "SuperArmorBrakeKnockbackDist", "Stamina", "StaminaRecoverBaseVel", "DefPhys", "DefSlash", "DefBlow", "DefThrust", "DefMag", "DefFire", "DefThun", "DefFlickPower", "ResistPoison", "ResistDisease", "ResistBleed", "ResistCurse", "GhostModelId", "NormalChangeResourceId", "GuardAngle", "SlashGuardCutRate", "BlowGuardCutRate", "ThrustGuardCutRate", "SuperArmorDurability", "NormalChangeTexChrId", "DropType", "KnockbackRate", "KnockbackParamId", "FallDamageDump", "StaminaGuardDef", "PcAttrB", "PcAttrW", "PcAttrL", "PcAttrR", "AreaAttrB", "AreaAttrW", "AreaAttrL", "AreaAttrR", "MpRecoverBaseVel", "FlickDamageCutRate", "DefaultLodParamId", "DrawType", "NpcType", "TeamType", "MoveType", "LockDist", "Material", "MaterialSfx", "MaterialWeak", "MaterialSfxWeak", "PartsDamageType", "MaxUndurationAng", "GuardLevel", "BurnSfxType", "PoisonGuardResist", "DiseaseGuardResist", "BloodGuardResist", "CurseGuardResist", "ParryAttack", "ParryDefense", "SfxSize", "PushOutCamRegionRadius", "HitStopType", "LadderEndChkOffsetTop", "LadderEndChkOffsetLow", "BitFields0", "BitFields1", "BitFields2", "BitFields3", "BitFields4", "Unknown10", "Unknown11", "Unknown12", "Unknown13", "Unknown14", "Unknown15", "Unknown16", "Unknown17", "Unknown18", "Unknown19", "Unknown110", "Unknown111", "Unknown112", "Unknown113", "Unknown114", "Unknown115", "DefDark", "Unknown20", "Unknown21", "Unknown22", "Unknown23", "Unknown24", "Unknown25", "Unknown26", "Unknown27", "Unknown28", "Unknown29", "Unknown210", "Unknown211", "Unknown212", "Unknown213", "Unknown214", "Unknown215", "Unknown216", "Unknown217", "Unknown218", "Unknown219", "Unknown220", "Unknown221", "Unknown222", "Unknown223", "Unknown224", "Unknown225", "Unknown226", "Unknown227", "Unknown228", "Unknown229", "Unknown230", "Unknown231", "Unknown232", "Unknown233", "Unknown234", "Unknown235", "Unknown236", "Unknown237", "Unknown238", "Unknown239", "Unknown240", "Unknown241", "Unknown242", "Unknown243", "Unknown244", "Unknown245", "Unknown246", "Unknown247", "Unknown248", "Unknown249", "Unknown250", "Unknown251", "Unknown252", "Unknown253", "Unknown254", "Unknown255", "Unknown256", "Unknown257", "Unknown258", "Unknown259", "Unknown260", "Unknown261", "Unknown262", "Unknown263", "Phys", "Thrust", "Strike", "Slash", "Magic", "Fire", "Lightning", "Dark" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.BehaviorParam), global::Ds3Ext.BehaviorParam.Parser, new[]{ "Id", "Index", "Offset", "VariationId", "BehaviorJudgeId", "EzStateBehaviorTypeOld", "RefType", "Padding10", "Padding11", "ReferenceId", "SfxVariationId", "Stamina", "Mp", "Category", "HeroPoint", "Padding20", "Padding21" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Ds3Ext.AtkParam), global::Ds3Ext.AtkParam.Parser, new[]{ "Id", "Index", "Offset", "Hit0Radius", "Hit1Radius", "Hit2Radius", "Hit3Radius", "KnockbackDist", "HitStopTime", "SpEffectId0", "SpEffectId1", "SpEffectId2", "SpEffectId3", "SpEffectId4", "Hit0DmyPoly1", "Hit1DmyPoly1", "Hit2DmyPoly1", "Hit3DmyPoly1", "Hit0DmyPoly2", "Hit1DmyPoly2", "Hit2DmyPoly2", "Hit3DmyPoly2", "BlowingCorrection", "AtkPhysCorrection", "AtkMagCorrection", "AtkFireCorrection", "AtkThunCorrection", "AtkStamCorrection", "GuardAtkRateCorrection", "GuardBreakCorrection", "AtkThrowEscapeCorrection", "AtkPhys", "AtkMag", "AtkFire", "AtkThun", "AtkStam", "GuardAtkRate", "GuardBreakRate", "AtkSuperArmor", "AtkThrowEscape", "AtkObj", "GuardStaminaCutRate", "GuardRate", "ThrowTypeId", "Hit0HitType", "Hit1HitType", "Hit2HitType", "Hit3HitType", "Hit0Priority", "Hit1Priority", "Hit2Priority", "Hit3Priority", "DamageLevel", "MapHitType", "GuardCutCancelRate", "AtkAttribute", "SpecialAttributes", "AttackType", "AtkMaterial", "AtkSize", "DefMaterial", "DefSfxMaterial", "HitSourceType", "ThrowFlag", "BitField", "Unknown0", "Unknown1", "Unknown2", "Unknown3", "Unknown4", "Unknown5", "Unknown6", "Unknown7", "Unknown8", "Unknown9", "Unknown10", "Unknown11", "Unknown12", "Unknown13", "Unknown14", "Unknown15", "Unknown16", "Unknown17", "Unknown18", "Unknown19", "Unknown20", "Unknown21", "Unknown22", "Unknown23", "Unknown24", "Unknown25", "Unknown26", "Unknown27", "Unknown28", "Unknown29", "Unknown30", "Unknown31", "Unknown32", "Unknown33", "Unknown34", "Unknown35", "Unknown36", "Unknown37", "Unknown38", "Unknown39", "Unknown40", "Unknown41", "Unknown42", "Unknown43", "Unknown44", "Unknown45", "Unknown46", "Unknown47", "Unknown48", "Unknown49", "Unknown50", "Unknown51", "Unknown52", "Unknown53", "Unknown54", "Unknown55", "Unknown56", "Unknown57", "Unknown58", "Unknown59", "Unknown60", "Unknown61", "Unknown62", "Unknown63", "Unknown64", "Unknown65", "Unknown66", "Unknown67", "Unknown68", "Unknown69", "Unknown70", "Unknown71", "Unknown72", "Unknown73", "Unknown74", "Unknown75", "Unknown76", "Unknown77", "Unknown78", "Unknown79", "Unknown80", "Unknown81", "Unknown82", "Unknown83", "Unknown84", "Unknown85", "Unknown86", "Unknown87", "Unknown88", "Unknown89", "Unknown90", "Unknown91", "Unknown92", "Unknown93", "Unknown94", "Unknown95", "Unknown96", "Unknown97", "Unknown98", "Unknown99", "Unknown100", "Unknown101", "Unknown102", "Unknown103", "Unknown104", "Unknown105", "Unknown106", "Unknown107", "Unknown108", "Unknown109", "Unknown110", "Unknown111", "Unknown112", "Unknown113", "Unknown114", "Unknown115", "Unknown116", "Unknown117", "Unknown118", "Unknown119", "Unknown120", "Unknown121", "Unknown122", "Unknown123", "Unknown124", "Unknown125", "Unknown126", "Unknown127", "Unknown128", "Unknown129", "Unknown130", "Unknown131", "Unknown132", "Unknown133", "Unknown134", "Unknown135", "Unknown136", "Unknown137", "Unknown138", "Unknown139", "Unknown140", "Unknown141", "Unknown142", "Unknown143", "Unknown144", "Unknown145", "Unknown146", "Unknown147", "Unknown148", "Unknown149", "Unknown150", "Unknown151", "Unknown152", "Unknown153", "Unknown154", "Unknown155", "Unknown156", "Unknown157", "Unknown158", "Unknown159", "Unknown160", "Unknown161", "Unknown162", "Unknown163", "Unknown164", "Unknown165", "Unknown166", "Unknown167", "Unknown168", "Unknown169", "Unknown170", "Unknown171", "Unknown172", "Unknown173", "Unknown174", "Unknown175", "Unknown176", "Unknown177", "Unknown178", "Unknown179", "Unknown180", "Unknown181", "Unknown182", "Unknown183", "Unknown184", "Unknown185", "Unknown186", "Unknown187", "Unknown188", "Unknown189", "Unknown190", "Unknown191", "Unknown192", "Unknown193", "Unknown194", "Unknown195", "Unknown196", "Unknown197", "Unknown198", "Unknown199", "Unknown200", "Unknown201", "Unknown202", "Unknown203", "Unknown204", "Unknown205", "Unknown206", "Unknown207", "Unknown208", "Unknown209", "Unknown210", "Unknown211", "Unknown212", "Unknown213", "Unknown214", "Unknown215", "Unknown216", "Unknown217", "Unknown218", "Unknown219", "Unknown220", "Unknown221", "Unknown222", "Unknown223", "Unknown224", "Unknown225", "Unknown226", "Unknown227", "Unknown228", "Unknown229", "Unknown230", "Unknown231", "Unknown232", "Unknown233", "Unknown234", "Unknown235", "Unknown236", "Unknown237", "Unknown238", "Unknown239", "Unknown240", "Unknown241", "Unknown242", "Unknown243", "Unknown244", "Unknown245", "Unknown246", "Unknown247", "Unknown248", "Unknown249", "Unknown250", "Unknown251", "Unknown252", "Unknown253", "Unknown254", "Unknown255", "Unknown256", "Unknown257", "Unknown258", "Unknown259", "Unknown260", "Unknown261", "Unknown262", "Unknown263", "Unknown264", "AtkDarkCorrection" }, null, null, null),
@@ -6760,12 +6799,574 @@ namespace Ds3Ext {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class ReinforceParamProtector : pb::IMessage<ReinforceParamProtector> {
+    private static readonly pb::MessageParser<ReinforceParamProtector> _parser = new pb::MessageParser<ReinforceParamProtector>(() => new ReinforceParamProtector());
+    public static pb::MessageParser<ReinforceParamProtector> Parser { get { return _parser; } }
+
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    public ReinforceParamProtector() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    public ReinforceParamProtector(ReinforceParamProtector other) : this() {
+      id_ = other.id_;
+      index_ = other.index_;
+      offset_ = other.offset_;
+      physicsDefRate_ = other.physicsDefRate_;
+      magicDefRate_ = other.magicDefRate_;
+      fireDefRate_ = other.fireDefRate_;
+      thunderDefRate_ = other.thunderDefRate_;
+      slashDefRate_ = other.slashDefRate_;
+      strikeDefRate_ = other.strikeDefRate_;
+      thrustDefRate_ = other.thrustDefRate_;
+      resistPoisonRate_ = other.resistPoisonRate_;
+      resistDiseaseRate_ = other.resistDiseaseRate_;
+      resistBloodRate_ = other.resistBloodRate_;
+      resistCurseRate_ = other.resistCurseRate_;
+      residentSpEffectId1_ = other.residentSpEffectId1_;
+      residentSpEffectId2_ = other.residentSpEffectId2_;
+      residentSpEffectId3_ = other.residentSpEffectId3_;
+      materialSetId_ = other.materialSetId_;
+    }
+
+    public ReinforceParamProtector Clone() {
+      return new ReinforceParamProtector(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 2;
+    private uint id_;
+    public uint Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Index" field.</summary>
+    public const int IndexFieldNumber = 3;
+    private int index_;
+    public int Index {
+      get { return index_; }
+      set {
+        index_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Offset" field.</summary>
+    public const int OffsetFieldNumber = 4;
+    private int offset_;
+    public int Offset {
+      get { return offset_; }
+      set {
+        offset_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PhysicsDefRate" field.</summary>
+    public const int PhysicsDefRateFieldNumber = 5;
+    private float physicsDefRate_;
+    public float PhysicsDefRate {
+      get { return physicsDefRate_; }
+      set {
+        physicsDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MagicDefRate" field.</summary>
+    public const int MagicDefRateFieldNumber = 6;
+    private float magicDefRate_;
+    public float MagicDefRate {
+      get { return magicDefRate_; }
+      set {
+        magicDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "FireDefRate" field.</summary>
+    public const int FireDefRateFieldNumber = 7;
+    private float fireDefRate_;
+    public float FireDefRate {
+      get { return fireDefRate_; }
+      set {
+        fireDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ThunderDefRate" field.</summary>
+    public const int ThunderDefRateFieldNumber = 8;
+    private float thunderDefRate_;
+    public float ThunderDefRate {
+      get { return thunderDefRate_; }
+      set {
+        thunderDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SlashDefRate" field.</summary>
+    public const int SlashDefRateFieldNumber = 9;
+    private float slashDefRate_;
+    public float SlashDefRate {
+      get { return slashDefRate_; }
+      set {
+        slashDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "StrikeDefRate" field.</summary>
+    public const int StrikeDefRateFieldNumber = 10;
+    private float strikeDefRate_;
+    public float StrikeDefRate {
+      get { return strikeDefRate_; }
+      set {
+        strikeDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ThrustDefRate" field.</summary>
+    public const int ThrustDefRateFieldNumber = 11;
+    private float thrustDefRate_;
+    public float ThrustDefRate {
+      get { return thrustDefRate_; }
+      set {
+        thrustDefRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResistPoisonRate" field.</summary>
+    public const int ResistPoisonRateFieldNumber = 12;
+    private float resistPoisonRate_;
+    public float ResistPoisonRate {
+      get { return resistPoisonRate_; }
+      set {
+        resistPoisonRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResistDiseaseRate" field.</summary>
+    public const int ResistDiseaseRateFieldNumber = 13;
+    private float resistDiseaseRate_;
+    public float ResistDiseaseRate {
+      get { return resistDiseaseRate_; }
+      set {
+        resistDiseaseRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResistBloodRate" field.</summary>
+    public const int ResistBloodRateFieldNumber = 14;
+    private float resistBloodRate_;
+    public float ResistBloodRate {
+      get { return resistBloodRate_; }
+      set {
+        resistBloodRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResistCurseRate" field.</summary>
+    public const int ResistCurseRateFieldNumber = 15;
+    private float resistCurseRate_;
+    public float ResistCurseRate {
+      get { return resistCurseRate_; }
+      set {
+        resistCurseRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResidentSpEffectId1" field.</summary>
+    public const int ResidentSpEffectId1FieldNumber = 16;
+    private uint residentSpEffectId1_;
+    public uint ResidentSpEffectId1 {
+      get { return residentSpEffectId1_; }
+      set {
+        residentSpEffectId1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResidentSpEffectId2" field.</summary>
+    public const int ResidentSpEffectId2FieldNumber = 17;
+    private uint residentSpEffectId2_;
+    public uint ResidentSpEffectId2 {
+      get { return residentSpEffectId2_; }
+      set {
+        residentSpEffectId2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ResidentSpEffectId3" field.</summary>
+    public const int ResidentSpEffectId3FieldNumber = 18;
+    private uint residentSpEffectId3_;
+    public uint ResidentSpEffectId3 {
+      get { return residentSpEffectId3_; }
+      set {
+        residentSpEffectId3_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MaterialSetId" field.</summary>
+    public const int MaterialSetIdFieldNumber = 19;
+    private uint materialSetId_;
+    public uint MaterialSetId {
+      get { return materialSetId_; }
+      set {
+        materialSetId_ = value;
+      }
+    }
+
+    public override bool Equals(object other) {
+      return Equals(other as ReinforceParamProtector);
+    }
+
+    public bool Equals(ReinforceParamProtector other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Index != other.Index) return false;
+      if (Offset != other.Offset) return false;
+      if (PhysicsDefRate != other.PhysicsDefRate) return false;
+      if (MagicDefRate != other.MagicDefRate) return false;
+      if (FireDefRate != other.FireDefRate) return false;
+      if (ThunderDefRate != other.ThunderDefRate) return false;
+      if (SlashDefRate != other.SlashDefRate) return false;
+      if (StrikeDefRate != other.StrikeDefRate) return false;
+      if (ThrustDefRate != other.ThrustDefRate) return false;
+      if (ResistPoisonRate != other.ResistPoisonRate) return false;
+      if (ResistDiseaseRate != other.ResistDiseaseRate) return false;
+      if (ResistBloodRate != other.ResistBloodRate) return false;
+      if (ResistCurseRate != other.ResistCurseRate) return false;
+      if (ResidentSpEffectId1 != other.ResidentSpEffectId1) return false;
+      if (ResidentSpEffectId2 != other.ResidentSpEffectId2) return false;
+      if (ResidentSpEffectId3 != other.ResidentSpEffectId3) return false;
+      if (MaterialSetId != other.MaterialSetId) return false;
+      return true;
+    }
+
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (Index != 0) hash ^= Index.GetHashCode();
+      if (Offset != 0) hash ^= Offset.GetHashCode();
+      if (PhysicsDefRate != 0F) hash ^= PhysicsDefRate.GetHashCode();
+      if (MagicDefRate != 0F) hash ^= MagicDefRate.GetHashCode();
+      if (FireDefRate != 0F) hash ^= FireDefRate.GetHashCode();
+      if (ThunderDefRate != 0F) hash ^= ThunderDefRate.GetHashCode();
+      if (SlashDefRate != 0F) hash ^= SlashDefRate.GetHashCode();
+      if (StrikeDefRate != 0F) hash ^= StrikeDefRate.GetHashCode();
+      if (ThrustDefRate != 0F) hash ^= ThrustDefRate.GetHashCode();
+      if (ResistPoisonRate != 0F) hash ^= ResistPoisonRate.GetHashCode();
+      if (ResistDiseaseRate != 0F) hash ^= ResistDiseaseRate.GetHashCode();
+      if (ResistBloodRate != 0F) hash ^= ResistBloodRate.GetHashCode();
+      if (ResistCurseRate != 0F) hash ^= ResistCurseRate.GetHashCode();
+      if (ResidentSpEffectId1 != 0) hash ^= ResidentSpEffectId1.GetHashCode();
+      if (ResidentSpEffectId2 != 0) hash ^= ResidentSpEffectId2.GetHashCode();
+      if (ResidentSpEffectId3 != 0) hash ^= ResidentSpEffectId3.GetHashCode();
+      if (MaterialSetId != 0) hash ^= MaterialSetId.GetHashCode();
+      return hash;
+    }
+
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Id);
+      }
+      if (Index != 0) {
+        output.WriteRawTag(24);
+        output.WriteSInt32(Index);
+      }
+      if (Offset != 0) {
+        output.WriteRawTag(32);
+        output.WriteSInt32(Offset);
+      }
+      if (PhysicsDefRate != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(PhysicsDefRate);
+      }
+      if (MagicDefRate != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(MagicDefRate);
+      }
+      if (FireDefRate != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(FireDefRate);
+      }
+      if (ThunderDefRate != 0F) {
+        output.WriteRawTag(69);
+        output.WriteFloat(ThunderDefRate);
+      }
+      if (SlashDefRate != 0F) {
+        output.WriteRawTag(77);
+        output.WriteFloat(SlashDefRate);
+      }
+      if (StrikeDefRate != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(StrikeDefRate);
+      }
+      if (ThrustDefRate != 0F) {
+        output.WriteRawTag(93);
+        output.WriteFloat(ThrustDefRate);
+      }
+      if (ResistPoisonRate != 0F) {
+        output.WriteRawTag(101);
+        output.WriteFloat(ResistPoisonRate);
+      }
+      if (ResistDiseaseRate != 0F) {
+        output.WriteRawTag(109);
+        output.WriteFloat(ResistDiseaseRate);
+      }
+      if (ResistBloodRate != 0F) {
+        output.WriteRawTag(117);
+        output.WriteFloat(ResistBloodRate);
+      }
+      if (ResistCurseRate != 0F) {
+        output.WriteRawTag(125);
+        output.WriteFloat(ResistCurseRate);
+      }
+      if (ResidentSpEffectId1 != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteUInt32(ResidentSpEffectId1);
+      }
+      if (ResidentSpEffectId2 != 0) {
+        output.WriteRawTag(136, 1);
+        output.WriteUInt32(ResidentSpEffectId2);
+      }
+      if (ResidentSpEffectId3 != 0) {
+        output.WriteRawTag(144, 1);
+        output.WriteUInt32(ResidentSpEffectId3);
+      }
+      if (MaterialSetId != 0) {
+        output.WriteRawTag(152, 1);
+        output.WriteUInt32(MaterialSetId);
+      }
+    }
+
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
+      }
+      if (Index != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeSInt32Size(Index);
+      }
+      if (Offset != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeSInt32Size(Offset);
+      }
+      if (PhysicsDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (MagicDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (FireDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ThunderDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (SlashDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (StrikeDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ThrustDefRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ResistPoisonRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ResistDiseaseRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ResistBloodRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ResistCurseRate != 0F) {
+        size += 1 + 4;
+      }
+      if (ResidentSpEffectId1 != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ResidentSpEffectId1);
+      }
+      if (ResidentSpEffectId2 != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ResidentSpEffectId2);
+      }
+      if (ResidentSpEffectId3 != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ResidentSpEffectId3);
+      }
+      if (MaterialSetId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(MaterialSetId);
+      }
+      return size;
+    }
+
+    public void MergeFrom(ReinforceParamProtector other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.Index != 0) {
+        Index = other.Index;
+      }
+      if (other.Offset != 0) {
+        Offset = other.Offset;
+      }
+      if (other.PhysicsDefRate != 0F) {
+        PhysicsDefRate = other.PhysicsDefRate;
+      }
+      if (other.MagicDefRate != 0F) {
+        MagicDefRate = other.MagicDefRate;
+      }
+      if (other.FireDefRate != 0F) {
+        FireDefRate = other.FireDefRate;
+      }
+      if (other.ThunderDefRate != 0F) {
+        ThunderDefRate = other.ThunderDefRate;
+      }
+      if (other.SlashDefRate != 0F) {
+        SlashDefRate = other.SlashDefRate;
+      }
+      if (other.StrikeDefRate != 0F) {
+        StrikeDefRate = other.StrikeDefRate;
+      }
+      if (other.ThrustDefRate != 0F) {
+        ThrustDefRate = other.ThrustDefRate;
+      }
+      if (other.ResistPoisonRate != 0F) {
+        ResistPoisonRate = other.ResistPoisonRate;
+      }
+      if (other.ResistDiseaseRate != 0F) {
+        ResistDiseaseRate = other.ResistDiseaseRate;
+      }
+      if (other.ResistBloodRate != 0F) {
+        ResistBloodRate = other.ResistBloodRate;
+      }
+      if (other.ResistCurseRate != 0F) {
+        ResistCurseRate = other.ResistCurseRate;
+      }
+      if (other.ResidentSpEffectId1 != 0) {
+        ResidentSpEffectId1 = other.ResidentSpEffectId1;
+      }
+      if (other.ResidentSpEffectId2 != 0) {
+        ResidentSpEffectId2 = other.ResidentSpEffectId2;
+      }
+      if (other.ResidentSpEffectId3 != 0) {
+        ResidentSpEffectId3 = other.ResidentSpEffectId3;
+      }
+      if (other.MaterialSetId != 0) {
+        MaterialSetId = other.MaterialSetId;
+      }
+    }
+
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 16: {
+            Id = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Index = input.ReadSInt32();
+            break;
+          }
+          case 32: {
+            Offset = input.ReadSInt32();
+            break;
+          }
+          case 45: {
+            PhysicsDefRate = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            MagicDefRate = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            FireDefRate = input.ReadFloat();
+            break;
+          }
+          case 69: {
+            ThunderDefRate = input.ReadFloat();
+            break;
+          }
+          case 77: {
+            SlashDefRate = input.ReadFloat();
+            break;
+          }
+          case 85: {
+            StrikeDefRate = input.ReadFloat();
+            break;
+          }
+          case 93: {
+            ThrustDefRate = input.ReadFloat();
+            break;
+          }
+          case 101: {
+            ResistPoisonRate = input.ReadFloat();
+            break;
+          }
+          case 109: {
+            ResistDiseaseRate = input.ReadFloat();
+            break;
+          }
+          case 117: {
+            ResistBloodRate = input.ReadFloat();
+            break;
+          }
+          case 125: {
+            ResistCurseRate = input.ReadFloat();
+            break;
+          }
+          case 128: {
+            ResidentSpEffectId1 = input.ReadUInt32();
+            break;
+          }
+          case 136: {
+            ResidentSpEffectId2 = input.ReadUInt32();
+            break;
+          }
+          case 144: {
+            ResidentSpEffectId3 = input.ReadUInt32();
+            break;
+          }
+          case 152: {
+            MaterialSetId = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
   public sealed partial class AttackElementCorrectParam : pb::IMessage<AttackElementCorrectParam> {
     private static readonly pb::MessageParser<AttackElementCorrectParam> _parser = new pb::MessageParser<AttackElementCorrectParam>(() => new AttackElementCorrectParam());
     public static pb::MessageParser<AttackElementCorrectParam> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -8299,7 +8900,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<CalcCorrectGraph> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -8969,7 +9570,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<Magic> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -9855,7 +10456,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<SpEffectParam> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -9990,7 +10591,58 @@ namespace Ds3Ext {
       effectTargetLive_ = other.effectTargetLive_;
       effectTargetGhost_ = other.effectTargetGhost_;
       effectTargetWhiteGhost_ = other.effectTargetWhiteGhost_;
-      strangeEnum_ = other.strangeEnum_;
+      effectTargetBlackGhost_ = other.effectTargetBlackGhost_;
+      effectTargetAttacker_ = other.effectTargetAttacker_;
+      dispIconNonActive_ = other.dispIconNonActive_;
+      useSpEffectEffect_ = other.useSpEffectEffect_;
+      adjustMagicAbility_ = other.adjustMagicAbility_;
+      adjustFaithAbility_ = other.adjustFaithAbility_;
+      gameClearBonus_ = other.gameClearBonus_;
+      magParamChange_ = other.magParamChange_;
+      miracleParamChange_ = other.miracleParamChange_;
+      clearSoul_ = other.clearSoul_;
+      requestSOS_ = other.requestSOS_;
+      requestBlackSOS_ = other.requestBlackSOS_;
+      requestForceJoinBlackSOS_ = other.requestForceJoinBlackSOS_;
+      requestKickSession_ = other.requestKickSession_;
+      requestLeaveSession_ = other.requestLeaveSession_;
+      requestNpcInveda_ = other.requestNpcInveda_;
+      noDead_ = other.noDead_;
+      currHPIndependeMax_ = other.currHPIndependeMax_;
+      corrosionIgnore_ = other.corrosionIgnore_;
+      sightSearchIgnore_ = other.sightSearchIgnore_;
+      hearingSearchCutIgnore_ = other.hearingSearchCutIgnore_;
+      antiMagicIgnore_ = other.antiMagicIgnore_;
+      fakeTargetIgnore_ = other.fakeTargetIgnore_;
+      fakeTargetIgnoreUndead_ = other.fakeTargetIgnoreUndead_;
+      fakeTargetIgnoreAnimal_ = other.fakeTargetIgnoreAnimal_;
+      grabityIgnore_ = other.grabityIgnore_;
+      disablePoison_ = other.disablePoison_;
+      disableDisease_ = other.disableDisease_;
+      disableBlood_ = other.disableBlood_;
+      disableCurse_ = other.disableCurse_;
+      enableCharm_ = other.enableCharm_;
+      enableLifeTime_ = other.enableLifeTime_;
+      hasTarget_ = other.hasTarget_;
+      isFireDamageCancel_ = other.isFireDamageCancel_;
+      isExtendSpEffectLife_ = other.isExtendSpEffectLife_;
+      requestLeaveColiseumSession_ = other.requestLeaveColiseumSession_;
+      vowType0_ = other.vowType0_;
+      vowType1_ = other.vowType1_;
+      vowType2_ = other.vowType2_;
+      vowType3_ = other.vowType3_;
+      vowType4_ = other.vowType4_;
+      vowType5_ = other.vowType5_;
+      vowType6_ = other.vowType6_;
+      vowType7_ = other.vowType7_;
+      vowType8_ = other.vowType8_;
+      vowType9_ = other.vowType9_;
+      vowType10_ = other.vowType10_;
+      vowType11_ = other.vowType11_;
+      vowType12_ = other.vowType12_;
+      vowType13_ = other.vowType13_;
+      vowType14_ = other.vowType14_;
+      vowType15_ = other.vowType15_;
       frostAttackPower_ = other.frostAttackPower_;
       darkDifferenceRate_ = other.darkDifferenceRate_;
     }
@@ -11209,18 +11861,528 @@ namespace Ds3Ext {
       }
     }
 
-    /// <summary>Field number for the "StrangeEnum" field.</summary>
-    public const int StrangeEnumFieldNumber = 123;
-    private bool strangeEnum_;
-    public bool StrangeEnum {
-      get { return strangeEnum_; }
+    /// <summary>Field number for the "EffectTargetBlackGhost" field.</summary>
+    public const int EffectTargetBlackGhostFieldNumber = 123;
+    private bool effectTargetBlackGhost_;
+    public bool EffectTargetBlackGhost {
+      get { return effectTargetBlackGhost_; }
       set {
-        strangeEnum_ = value;
+        effectTargetBlackGhost_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "EffectTargetAttacker" field.</summary>
+    public const int EffectTargetAttackerFieldNumber = 124;
+    private bool effectTargetAttacker_;
+    public bool EffectTargetAttacker {
+      get { return effectTargetAttacker_; }
+      set {
+        effectTargetAttacker_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DispIconNonActive" field.</summary>
+    public const int DispIconNonActiveFieldNumber = 125;
+    private bool dispIconNonActive_;
+    public bool DispIconNonActive {
+      get { return dispIconNonActive_; }
+      set {
+        dispIconNonActive_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "UseSpEffectEffect" field.</summary>
+    public const int UseSpEffectEffectFieldNumber = 126;
+    private bool useSpEffectEffect_;
+    public bool UseSpEffectEffect {
+      get { return useSpEffectEffect_; }
+      set {
+        useSpEffectEffect_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AdjustMagicAbility" field.</summary>
+    public const int AdjustMagicAbilityFieldNumber = 127;
+    private bool adjustMagicAbility_;
+    public bool AdjustMagicAbility {
+      get { return adjustMagicAbility_; }
+      set {
+        adjustMagicAbility_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AdjustFaithAbility" field.</summary>
+    public const int AdjustFaithAbilityFieldNumber = 128;
+    private bool adjustFaithAbility_;
+    public bool AdjustFaithAbility {
+      get { return adjustFaithAbility_; }
+      set {
+        adjustFaithAbility_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GameClearBonus" field.</summary>
+    public const int GameClearBonusFieldNumber = 129;
+    private bool gameClearBonus_;
+    public bool GameClearBonus {
+      get { return gameClearBonus_; }
+      set {
+        gameClearBonus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MagParamChange" field.</summary>
+    public const int MagParamChangeFieldNumber = 130;
+    private bool magParamChange_;
+    public bool MagParamChange {
+      get { return magParamChange_; }
+      set {
+        magParamChange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MiracleParamChange" field.</summary>
+    public const int MiracleParamChangeFieldNumber = 131;
+    private bool miracleParamChange_;
+    public bool MiracleParamChange {
+      get { return miracleParamChange_; }
+      set {
+        miracleParamChange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ClearSoul" field.</summary>
+    public const int ClearSoulFieldNumber = 132;
+    private bool clearSoul_;
+    public bool ClearSoul {
+      get { return clearSoul_; }
+      set {
+        clearSoul_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestSOS" field.</summary>
+    public const int RequestSOSFieldNumber = 133;
+    private bool requestSOS_;
+    public bool RequestSOS {
+      get { return requestSOS_; }
+      set {
+        requestSOS_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestBlackSOS" field.</summary>
+    public const int RequestBlackSOSFieldNumber = 134;
+    private bool requestBlackSOS_;
+    public bool RequestBlackSOS {
+      get { return requestBlackSOS_; }
+      set {
+        requestBlackSOS_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestForceJoinBlackSOS" field.</summary>
+    public const int RequestForceJoinBlackSOSFieldNumber = 135;
+    private bool requestForceJoinBlackSOS_;
+    public bool RequestForceJoinBlackSOS {
+      get { return requestForceJoinBlackSOS_; }
+      set {
+        requestForceJoinBlackSOS_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestKickSession" field.</summary>
+    public const int RequestKickSessionFieldNumber = 136;
+    private bool requestKickSession_;
+    public bool RequestKickSession {
+      get { return requestKickSession_; }
+      set {
+        requestKickSession_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestLeaveSession" field.</summary>
+    public const int RequestLeaveSessionFieldNumber = 137;
+    private bool requestLeaveSession_;
+    public bool RequestLeaveSession {
+      get { return requestLeaveSession_; }
+      set {
+        requestLeaveSession_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestNpcInveda" field.</summary>
+    public const int RequestNpcInvedaFieldNumber = 138;
+    private bool requestNpcInveda_;
+    public bool RequestNpcInveda {
+      get { return requestNpcInveda_; }
+      set {
+        requestNpcInveda_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "NoDead" field.</summary>
+    public const int NoDeadFieldNumber = 139;
+    private bool noDead_;
+    public bool NoDead {
+      get { return noDead_; }
+      set {
+        noDead_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CurrHPIndependeMax" field.</summary>
+    public const int CurrHPIndependeMaxFieldNumber = 140;
+    private bool currHPIndependeMax_;
+    public bool CurrHPIndependeMax {
+      get { return currHPIndependeMax_; }
+      set {
+        currHPIndependeMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CorrosionIgnore" field.</summary>
+    public const int CorrosionIgnoreFieldNumber = 141;
+    private bool corrosionIgnore_;
+    public bool CorrosionIgnore {
+      get { return corrosionIgnore_; }
+      set {
+        corrosionIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SightSearchIgnore" field.</summary>
+    public const int SightSearchIgnoreFieldNumber = 142;
+    private bool sightSearchIgnore_;
+    public bool SightSearchIgnore {
+      get { return sightSearchIgnore_; }
+      set {
+        sightSearchIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "HearingSearchCutIgnore" field.</summary>
+    public const int HearingSearchCutIgnoreFieldNumber = 143;
+    private bool hearingSearchCutIgnore_;
+    public bool HearingSearchCutIgnore {
+      get { return hearingSearchCutIgnore_; }
+      set {
+        hearingSearchCutIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AntiMagicIgnore" field.</summary>
+    public const int AntiMagicIgnoreFieldNumber = 144;
+    private bool antiMagicIgnore_;
+    public bool AntiMagicIgnore {
+      get { return antiMagicIgnore_; }
+      set {
+        antiMagicIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "FakeTargetIgnore" field.</summary>
+    public const int FakeTargetIgnoreFieldNumber = 145;
+    private bool fakeTargetIgnore_;
+    public bool FakeTargetIgnore {
+      get { return fakeTargetIgnore_; }
+      set {
+        fakeTargetIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "FakeTargetIgnoreUndead" field.</summary>
+    public const int FakeTargetIgnoreUndeadFieldNumber = 146;
+    private bool fakeTargetIgnoreUndead_;
+    public bool FakeTargetIgnoreUndead {
+      get { return fakeTargetIgnoreUndead_; }
+      set {
+        fakeTargetIgnoreUndead_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "FakeTargetIgnoreAnimal" field.</summary>
+    public const int FakeTargetIgnoreAnimalFieldNumber = 147;
+    private bool fakeTargetIgnoreAnimal_;
+    public bool FakeTargetIgnoreAnimal {
+      get { return fakeTargetIgnoreAnimal_; }
+      set {
+        fakeTargetIgnoreAnimal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GrabityIgnore" field.</summary>
+    public const int GrabityIgnoreFieldNumber = 148;
+    private bool grabityIgnore_;
+    public bool GrabityIgnore {
+      get { return grabityIgnore_; }
+      set {
+        grabityIgnore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DisablePoison" field.</summary>
+    public const int DisablePoisonFieldNumber = 149;
+    private bool disablePoison_;
+    public bool DisablePoison {
+      get { return disablePoison_; }
+      set {
+        disablePoison_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DisableDisease" field.</summary>
+    public const int DisableDiseaseFieldNumber = 150;
+    private bool disableDisease_;
+    public bool DisableDisease {
+      get { return disableDisease_; }
+      set {
+        disableDisease_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DisableBlood" field.</summary>
+    public const int DisableBloodFieldNumber = 151;
+    private bool disableBlood_;
+    public bool DisableBlood {
+      get { return disableBlood_; }
+      set {
+        disableBlood_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DisableCurse" field.</summary>
+    public const int DisableCurseFieldNumber = 152;
+    private bool disableCurse_;
+    public bool DisableCurse {
+      get { return disableCurse_; }
+      set {
+        disableCurse_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "EnableCharm" field.</summary>
+    public const int EnableCharmFieldNumber = 153;
+    private bool enableCharm_;
+    public bool EnableCharm {
+      get { return enableCharm_; }
+      set {
+        enableCharm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "EnableLifeTime" field.</summary>
+    public const int EnableLifeTimeFieldNumber = 154;
+    private bool enableLifeTime_;
+    public bool EnableLifeTime {
+      get { return enableLifeTime_; }
+      set {
+        enableLifeTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "HasTarget" field.</summary>
+    public const int HasTargetFieldNumber = 155;
+    private bool hasTarget_;
+    public bool HasTarget {
+      get { return hasTarget_; }
+      set {
+        hasTarget_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsFireDamageCancel" field.</summary>
+    public const int IsFireDamageCancelFieldNumber = 156;
+    private bool isFireDamageCancel_;
+    public bool IsFireDamageCancel {
+      get { return isFireDamageCancel_; }
+      set {
+        isFireDamageCancel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsExtendSpEffectLife" field.</summary>
+    public const int IsExtendSpEffectLifeFieldNumber = 157;
+    private bool isExtendSpEffectLife_;
+    public bool IsExtendSpEffectLife {
+      get { return isExtendSpEffectLife_; }
+      set {
+        isExtendSpEffectLife_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RequestLeaveColiseumSession" field.</summary>
+    public const int RequestLeaveColiseumSessionFieldNumber = 158;
+    private bool requestLeaveColiseumSession_;
+    public bool RequestLeaveColiseumSession {
+      get { return requestLeaveColiseumSession_; }
+      set {
+        requestLeaveColiseumSession_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType0" field.</summary>
+    public const int VowType0FieldNumber = 159;
+    private bool vowType0_;
+    public bool VowType0 {
+      get { return vowType0_; }
+      set {
+        vowType0_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType1" field.</summary>
+    public const int VowType1FieldNumber = 160;
+    private bool vowType1_;
+    public bool VowType1 {
+      get { return vowType1_; }
+      set {
+        vowType1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType2" field.</summary>
+    public const int VowType2FieldNumber = 161;
+    private bool vowType2_;
+    public bool VowType2 {
+      get { return vowType2_; }
+      set {
+        vowType2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType3" field.</summary>
+    public const int VowType3FieldNumber = 162;
+    private bool vowType3_;
+    public bool VowType3 {
+      get { return vowType3_; }
+      set {
+        vowType3_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType4" field.</summary>
+    public const int VowType4FieldNumber = 163;
+    private bool vowType4_;
+    public bool VowType4 {
+      get { return vowType4_; }
+      set {
+        vowType4_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType5" field.</summary>
+    public const int VowType5FieldNumber = 164;
+    private bool vowType5_;
+    public bool VowType5 {
+      get { return vowType5_; }
+      set {
+        vowType5_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType6" field.</summary>
+    public const int VowType6FieldNumber = 165;
+    private bool vowType6_;
+    public bool VowType6 {
+      get { return vowType6_; }
+      set {
+        vowType6_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType7" field.</summary>
+    public const int VowType7FieldNumber = 166;
+    private bool vowType7_;
+    public bool VowType7 {
+      get { return vowType7_; }
+      set {
+        vowType7_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType8" field.</summary>
+    public const int VowType8FieldNumber = 167;
+    private bool vowType8_;
+    public bool VowType8 {
+      get { return vowType8_; }
+      set {
+        vowType8_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType9" field.</summary>
+    public const int VowType9FieldNumber = 168;
+    private bool vowType9_;
+    public bool VowType9 {
+      get { return vowType9_; }
+      set {
+        vowType9_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType10" field.</summary>
+    public const int VowType10FieldNumber = 169;
+    private bool vowType10_;
+    public bool VowType10 {
+      get { return vowType10_; }
+      set {
+        vowType10_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType11" field.</summary>
+    public const int VowType11FieldNumber = 170;
+    private bool vowType11_;
+    public bool VowType11 {
+      get { return vowType11_; }
+      set {
+        vowType11_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType12" field.</summary>
+    public const int VowType12FieldNumber = 171;
+    private bool vowType12_;
+    public bool VowType12 {
+      get { return vowType12_; }
+      set {
+        vowType12_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType13" field.</summary>
+    public const int VowType13FieldNumber = 172;
+    private bool vowType13_;
+    public bool VowType13 {
+      get { return vowType13_; }
+      set {
+        vowType13_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType14" field.</summary>
+    public const int VowType14FieldNumber = 173;
+    private bool vowType14_;
+    public bool VowType14 {
+      get { return vowType14_; }
+      set {
+        vowType14_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VowType15" field.</summary>
+    public const int VowType15FieldNumber = 174;
+    private bool vowType15_;
+    public bool VowType15 {
+      get { return vowType15_; }
+      set {
+        vowType15_ = value;
       }
     }
 
     /// <summary>Field number for the "FrostAttackPower" field.</summary>
-    public const int FrostAttackPowerFieldNumber = 124;
+    public const int FrostAttackPowerFieldNumber = 175;
     private int frostAttackPower_;
     public int FrostAttackPower {
       get { return frostAttackPower_; }
@@ -11230,7 +12392,7 @@ namespace Ds3Ext {
     }
 
     /// <summary>Field number for the "DarkDifferenceRate" field.</summary>
-    public const int DarkDifferenceRateFieldNumber = 125;
+    public const int DarkDifferenceRateFieldNumber = 176;
     private float darkDifferenceRate_;
     public float DarkDifferenceRate {
       get { return darkDifferenceRate_; }
@@ -11371,7 +12533,58 @@ namespace Ds3Ext {
       if (EffectTargetLive != other.EffectTargetLive) return false;
       if (EffectTargetGhost != other.EffectTargetGhost) return false;
       if (EffectTargetWhiteGhost != other.EffectTargetWhiteGhost) return false;
-      if (StrangeEnum != other.StrangeEnum) return false;
+      if (EffectTargetBlackGhost != other.EffectTargetBlackGhost) return false;
+      if (EffectTargetAttacker != other.EffectTargetAttacker) return false;
+      if (DispIconNonActive != other.DispIconNonActive) return false;
+      if (UseSpEffectEffect != other.UseSpEffectEffect) return false;
+      if (AdjustMagicAbility != other.AdjustMagicAbility) return false;
+      if (AdjustFaithAbility != other.AdjustFaithAbility) return false;
+      if (GameClearBonus != other.GameClearBonus) return false;
+      if (MagParamChange != other.MagParamChange) return false;
+      if (MiracleParamChange != other.MiracleParamChange) return false;
+      if (ClearSoul != other.ClearSoul) return false;
+      if (RequestSOS != other.RequestSOS) return false;
+      if (RequestBlackSOS != other.RequestBlackSOS) return false;
+      if (RequestForceJoinBlackSOS != other.RequestForceJoinBlackSOS) return false;
+      if (RequestKickSession != other.RequestKickSession) return false;
+      if (RequestLeaveSession != other.RequestLeaveSession) return false;
+      if (RequestNpcInveda != other.RequestNpcInveda) return false;
+      if (NoDead != other.NoDead) return false;
+      if (CurrHPIndependeMax != other.CurrHPIndependeMax) return false;
+      if (CorrosionIgnore != other.CorrosionIgnore) return false;
+      if (SightSearchIgnore != other.SightSearchIgnore) return false;
+      if (HearingSearchCutIgnore != other.HearingSearchCutIgnore) return false;
+      if (AntiMagicIgnore != other.AntiMagicIgnore) return false;
+      if (FakeTargetIgnore != other.FakeTargetIgnore) return false;
+      if (FakeTargetIgnoreUndead != other.FakeTargetIgnoreUndead) return false;
+      if (FakeTargetIgnoreAnimal != other.FakeTargetIgnoreAnimal) return false;
+      if (GrabityIgnore != other.GrabityIgnore) return false;
+      if (DisablePoison != other.DisablePoison) return false;
+      if (DisableDisease != other.DisableDisease) return false;
+      if (DisableBlood != other.DisableBlood) return false;
+      if (DisableCurse != other.DisableCurse) return false;
+      if (EnableCharm != other.EnableCharm) return false;
+      if (EnableLifeTime != other.EnableLifeTime) return false;
+      if (HasTarget != other.HasTarget) return false;
+      if (IsFireDamageCancel != other.IsFireDamageCancel) return false;
+      if (IsExtendSpEffectLife != other.IsExtendSpEffectLife) return false;
+      if (RequestLeaveColiseumSession != other.RequestLeaveColiseumSession) return false;
+      if (VowType0 != other.VowType0) return false;
+      if (VowType1 != other.VowType1) return false;
+      if (VowType2 != other.VowType2) return false;
+      if (VowType3 != other.VowType3) return false;
+      if (VowType4 != other.VowType4) return false;
+      if (VowType5 != other.VowType5) return false;
+      if (VowType6 != other.VowType6) return false;
+      if (VowType7 != other.VowType7) return false;
+      if (VowType8 != other.VowType8) return false;
+      if (VowType9 != other.VowType9) return false;
+      if (VowType10 != other.VowType10) return false;
+      if (VowType11 != other.VowType11) return false;
+      if (VowType12 != other.VowType12) return false;
+      if (VowType13 != other.VowType13) return false;
+      if (VowType14 != other.VowType14) return false;
+      if (VowType15 != other.VowType15) return false;
       if (FrostAttackPower != other.FrostAttackPower) return false;
       if (DarkDifferenceRate != other.DarkDifferenceRate) return false;
       return true;
@@ -11500,7 +12713,58 @@ namespace Ds3Ext {
       if (EffectTargetLive != false) hash ^= EffectTargetLive.GetHashCode();
       if (EffectTargetGhost != false) hash ^= EffectTargetGhost.GetHashCode();
       if (EffectTargetWhiteGhost != false) hash ^= EffectTargetWhiteGhost.GetHashCode();
-      if (StrangeEnum != false) hash ^= StrangeEnum.GetHashCode();
+      if (EffectTargetBlackGhost != false) hash ^= EffectTargetBlackGhost.GetHashCode();
+      if (EffectTargetAttacker != false) hash ^= EffectTargetAttacker.GetHashCode();
+      if (DispIconNonActive != false) hash ^= DispIconNonActive.GetHashCode();
+      if (UseSpEffectEffect != false) hash ^= UseSpEffectEffect.GetHashCode();
+      if (AdjustMagicAbility != false) hash ^= AdjustMagicAbility.GetHashCode();
+      if (AdjustFaithAbility != false) hash ^= AdjustFaithAbility.GetHashCode();
+      if (GameClearBonus != false) hash ^= GameClearBonus.GetHashCode();
+      if (MagParamChange != false) hash ^= MagParamChange.GetHashCode();
+      if (MiracleParamChange != false) hash ^= MiracleParamChange.GetHashCode();
+      if (ClearSoul != false) hash ^= ClearSoul.GetHashCode();
+      if (RequestSOS != false) hash ^= RequestSOS.GetHashCode();
+      if (RequestBlackSOS != false) hash ^= RequestBlackSOS.GetHashCode();
+      if (RequestForceJoinBlackSOS != false) hash ^= RequestForceJoinBlackSOS.GetHashCode();
+      if (RequestKickSession != false) hash ^= RequestKickSession.GetHashCode();
+      if (RequestLeaveSession != false) hash ^= RequestLeaveSession.GetHashCode();
+      if (RequestNpcInveda != false) hash ^= RequestNpcInveda.GetHashCode();
+      if (NoDead != false) hash ^= NoDead.GetHashCode();
+      if (CurrHPIndependeMax != false) hash ^= CurrHPIndependeMax.GetHashCode();
+      if (CorrosionIgnore != false) hash ^= CorrosionIgnore.GetHashCode();
+      if (SightSearchIgnore != false) hash ^= SightSearchIgnore.GetHashCode();
+      if (HearingSearchCutIgnore != false) hash ^= HearingSearchCutIgnore.GetHashCode();
+      if (AntiMagicIgnore != false) hash ^= AntiMagicIgnore.GetHashCode();
+      if (FakeTargetIgnore != false) hash ^= FakeTargetIgnore.GetHashCode();
+      if (FakeTargetIgnoreUndead != false) hash ^= FakeTargetIgnoreUndead.GetHashCode();
+      if (FakeTargetIgnoreAnimal != false) hash ^= FakeTargetIgnoreAnimal.GetHashCode();
+      if (GrabityIgnore != false) hash ^= GrabityIgnore.GetHashCode();
+      if (DisablePoison != false) hash ^= DisablePoison.GetHashCode();
+      if (DisableDisease != false) hash ^= DisableDisease.GetHashCode();
+      if (DisableBlood != false) hash ^= DisableBlood.GetHashCode();
+      if (DisableCurse != false) hash ^= DisableCurse.GetHashCode();
+      if (EnableCharm != false) hash ^= EnableCharm.GetHashCode();
+      if (EnableLifeTime != false) hash ^= EnableLifeTime.GetHashCode();
+      if (HasTarget != false) hash ^= HasTarget.GetHashCode();
+      if (IsFireDamageCancel != false) hash ^= IsFireDamageCancel.GetHashCode();
+      if (IsExtendSpEffectLife != false) hash ^= IsExtendSpEffectLife.GetHashCode();
+      if (RequestLeaveColiseumSession != false) hash ^= RequestLeaveColiseumSession.GetHashCode();
+      if (VowType0 != false) hash ^= VowType0.GetHashCode();
+      if (VowType1 != false) hash ^= VowType1.GetHashCode();
+      if (VowType2 != false) hash ^= VowType2.GetHashCode();
+      if (VowType3 != false) hash ^= VowType3.GetHashCode();
+      if (VowType4 != false) hash ^= VowType4.GetHashCode();
+      if (VowType5 != false) hash ^= VowType5.GetHashCode();
+      if (VowType6 != false) hash ^= VowType6.GetHashCode();
+      if (VowType7 != false) hash ^= VowType7.GetHashCode();
+      if (VowType8 != false) hash ^= VowType8.GetHashCode();
+      if (VowType9 != false) hash ^= VowType9.GetHashCode();
+      if (VowType10 != false) hash ^= VowType10.GetHashCode();
+      if (VowType11 != false) hash ^= VowType11.GetHashCode();
+      if (VowType12 != false) hash ^= VowType12.GetHashCode();
+      if (VowType13 != false) hash ^= VowType13.GetHashCode();
+      if (VowType14 != false) hash ^= VowType14.GetHashCode();
+      if (VowType15 != false) hash ^= VowType15.GetHashCode();
       if (FrostAttackPower != 0) hash ^= FrostAttackPower.GetHashCode();
       if (DarkDifferenceRate != 0F) hash ^= DarkDifferenceRate.GetHashCode();
       return hash;
@@ -11995,16 +13259,220 @@ namespace Ds3Ext {
         output.WriteRawTag(208, 7);
         output.WriteBool(EffectTargetWhiteGhost);
       }
-      if (StrangeEnum != false) {
+      if (EffectTargetBlackGhost != false) {
         output.WriteRawTag(216, 7);
-        output.WriteBool(StrangeEnum);
+        output.WriteBool(EffectTargetBlackGhost);
+      }
+      if (EffectTargetAttacker != false) {
+        output.WriteRawTag(224, 7);
+        output.WriteBool(EffectTargetAttacker);
+      }
+      if (DispIconNonActive != false) {
+        output.WriteRawTag(232, 7);
+        output.WriteBool(DispIconNonActive);
+      }
+      if (UseSpEffectEffect != false) {
+        output.WriteRawTag(240, 7);
+        output.WriteBool(UseSpEffectEffect);
+      }
+      if (AdjustMagicAbility != false) {
+        output.WriteRawTag(248, 7);
+        output.WriteBool(AdjustMagicAbility);
+      }
+      if (AdjustFaithAbility != false) {
+        output.WriteRawTag(128, 8);
+        output.WriteBool(AdjustFaithAbility);
+      }
+      if (GameClearBonus != false) {
+        output.WriteRawTag(136, 8);
+        output.WriteBool(GameClearBonus);
+      }
+      if (MagParamChange != false) {
+        output.WriteRawTag(144, 8);
+        output.WriteBool(MagParamChange);
+      }
+      if (MiracleParamChange != false) {
+        output.WriteRawTag(152, 8);
+        output.WriteBool(MiracleParamChange);
+      }
+      if (ClearSoul != false) {
+        output.WriteRawTag(160, 8);
+        output.WriteBool(ClearSoul);
+      }
+      if (RequestSOS != false) {
+        output.WriteRawTag(168, 8);
+        output.WriteBool(RequestSOS);
+      }
+      if (RequestBlackSOS != false) {
+        output.WriteRawTag(176, 8);
+        output.WriteBool(RequestBlackSOS);
+      }
+      if (RequestForceJoinBlackSOS != false) {
+        output.WriteRawTag(184, 8);
+        output.WriteBool(RequestForceJoinBlackSOS);
+      }
+      if (RequestKickSession != false) {
+        output.WriteRawTag(192, 8);
+        output.WriteBool(RequestKickSession);
+      }
+      if (RequestLeaveSession != false) {
+        output.WriteRawTag(200, 8);
+        output.WriteBool(RequestLeaveSession);
+      }
+      if (RequestNpcInveda != false) {
+        output.WriteRawTag(208, 8);
+        output.WriteBool(RequestNpcInveda);
+      }
+      if (NoDead != false) {
+        output.WriteRawTag(216, 8);
+        output.WriteBool(NoDead);
+      }
+      if (CurrHPIndependeMax != false) {
+        output.WriteRawTag(224, 8);
+        output.WriteBool(CurrHPIndependeMax);
+      }
+      if (CorrosionIgnore != false) {
+        output.WriteRawTag(232, 8);
+        output.WriteBool(CorrosionIgnore);
+      }
+      if (SightSearchIgnore != false) {
+        output.WriteRawTag(240, 8);
+        output.WriteBool(SightSearchIgnore);
+      }
+      if (HearingSearchCutIgnore != false) {
+        output.WriteRawTag(248, 8);
+        output.WriteBool(HearingSearchCutIgnore);
+      }
+      if (AntiMagicIgnore != false) {
+        output.WriteRawTag(128, 9);
+        output.WriteBool(AntiMagicIgnore);
+      }
+      if (FakeTargetIgnore != false) {
+        output.WriteRawTag(136, 9);
+        output.WriteBool(FakeTargetIgnore);
+      }
+      if (FakeTargetIgnoreUndead != false) {
+        output.WriteRawTag(144, 9);
+        output.WriteBool(FakeTargetIgnoreUndead);
+      }
+      if (FakeTargetIgnoreAnimal != false) {
+        output.WriteRawTag(152, 9);
+        output.WriteBool(FakeTargetIgnoreAnimal);
+      }
+      if (GrabityIgnore != false) {
+        output.WriteRawTag(160, 9);
+        output.WriteBool(GrabityIgnore);
+      }
+      if (DisablePoison != false) {
+        output.WriteRawTag(168, 9);
+        output.WriteBool(DisablePoison);
+      }
+      if (DisableDisease != false) {
+        output.WriteRawTag(176, 9);
+        output.WriteBool(DisableDisease);
+      }
+      if (DisableBlood != false) {
+        output.WriteRawTag(184, 9);
+        output.WriteBool(DisableBlood);
+      }
+      if (DisableCurse != false) {
+        output.WriteRawTag(192, 9);
+        output.WriteBool(DisableCurse);
+      }
+      if (EnableCharm != false) {
+        output.WriteRawTag(200, 9);
+        output.WriteBool(EnableCharm);
+      }
+      if (EnableLifeTime != false) {
+        output.WriteRawTag(208, 9);
+        output.WriteBool(EnableLifeTime);
+      }
+      if (HasTarget != false) {
+        output.WriteRawTag(216, 9);
+        output.WriteBool(HasTarget);
+      }
+      if (IsFireDamageCancel != false) {
+        output.WriteRawTag(224, 9);
+        output.WriteBool(IsFireDamageCancel);
+      }
+      if (IsExtendSpEffectLife != false) {
+        output.WriteRawTag(232, 9);
+        output.WriteBool(IsExtendSpEffectLife);
+      }
+      if (RequestLeaveColiseumSession != false) {
+        output.WriteRawTag(240, 9);
+        output.WriteBool(RequestLeaveColiseumSession);
+      }
+      if (VowType0 != false) {
+        output.WriteRawTag(248, 9);
+        output.WriteBool(VowType0);
+      }
+      if (VowType1 != false) {
+        output.WriteRawTag(128, 10);
+        output.WriteBool(VowType1);
+      }
+      if (VowType2 != false) {
+        output.WriteRawTag(136, 10);
+        output.WriteBool(VowType2);
+      }
+      if (VowType3 != false) {
+        output.WriteRawTag(144, 10);
+        output.WriteBool(VowType3);
+      }
+      if (VowType4 != false) {
+        output.WriteRawTag(152, 10);
+        output.WriteBool(VowType4);
+      }
+      if (VowType5 != false) {
+        output.WriteRawTag(160, 10);
+        output.WriteBool(VowType5);
+      }
+      if (VowType6 != false) {
+        output.WriteRawTag(168, 10);
+        output.WriteBool(VowType6);
+      }
+      if (VowType7 != false) {
+        output.WriteRawTag(176, 10);
+        output.WriteBool(VowType7);
+      }
+      if (VowType8 != false) {
+        output.WriteRawTag(184, 10);
+        output.WriteBool(VowType8);
+      }
+      if (VowType9 != false) {
+        output.WriteRawTag(192, 10);
+        output.WriteBool(VowType9);
+      }
+      if (VowType10 != false) {
+        output.WriteRawTag(200, 10);
+        output.WriteBool(VowType10);
+      }
+      if (VowType11 != false) {
+        output.WriteRawTag(208, 10);
+        output.WriteBool(VowType11);
+      }
+      if (VowType12 != false) {
+        output.WriteRawTag(216, 10);
+        output.WriteBool(VowType12);
+      }
+      if (VowType13 != false) {
+        output.WriteRawTag(224, 10);
+        output.WriteBool(VowType13);
+      }
+      if (VowType14 != false) {
+        output.WriteRawTag(232, 10);
+        output.WriteBool(VowType14);
+      }
+      if (VowType15 != false) {
+        output.WriteRawTag(240, 10);
+        output.WriteBool(VowType15);
       }
       if (FrostAttackPower != 0) {
-        output.WriteRawTag(224, 7);
+        output.WriteRawTag(248, 10);
         output.WriteSInt32(FrostAttackPower);
       }
       if (DarkDifferenceRate != 0F) {
-        output.WriteRawTag(237, 7);
+        output.WriteRawTag(133, 11);
         output.WriteFloat(DarkDifferenceRate);
       }
     }
@@ -12374,7 +13842,160 @@ namespace Ds3Ext {
       if (EffectTargetWhiteGhost != false) {
         size += 2 + 1;
       }
-      if (StrangeEnum != false) {
+      if (EffectTargetBlackGhost != false) {
+        size += 2 + 1;
+      }
+      if (EffectTargetAttacker != false) {
+        size += 2 + 1;
+      }
+      if (DispIconNonActive != false) {
+        size += 2 + 1;
+      }
+      if (UseSpEffectEffect != false) {
+        size += 2 + 1;
+      }
+      if (AdjustMagicAbility != false) {
+        size += 2 + 1;
+      }
+      if (AdjustFaithAbility != false) {
+        size += 2 + 1;
+      }
+      if (GameClearBonus != false) {
+        size += 2 + 1;
+      }
+      if (MagParamChange != false) {
+        size += 2 + 1;
+      }
+      if (MiracleParamChange != false) {
+        size += 2 + 1;
+      }
+      if (ClearSoul != false) {
+        size += 2 + 1;
+      }
+      if (RequestSOS != false) {
+        size += 2 + 1;
+      }
+      if (RequestBlackSOS != false) {
+        size += 2 + 1;
+      }
+      if (RequestForceJoinBlackSOS != false) {
+        size += 2 + 1;
+      }
+      if (RequestKickSession != false) {
+        size += 2 + 1;
+      }
+      if (RequestLeaveSession != false) {
+        size += 2 + 1;
+      }
+      if (RequestNpcInveda != false) {
+        size += 2 + 1;
+      }
+      if (NoDead != false) {
+        size += 2 + 1;
+      }
+      if (CurrHPIndependeMax != false) {
+        size += 2 + 1;
+      }
+      if (CorrosionIgnore != false) {
+        size += 2 + 1;
+      }
+      if (SightSearchIgnore != false) {
+        size += 2 + 1;
+      }
+      if (HearingSearchCutIgnore != false) {
+        size += 2 + 1;
+      }
+      if (AntiMagicIgnore != false) {
+        size += 2 + 1;
+      }
+      if (FakeTargetIgnore != false) {
+        size += 2 + 1;
+      }
+      if (FakeTargetIgnoreUndead != false) {
+        size += 2 + 1;
+      }
+      if (FakeTargetIgnoreAnimal != false) {
+        size += 2 + 1;
+      }
+      if (GrabityIgnore != false) {
+        size += 2 + 1;
+      }
+      if (DisablePoison != false) {
+        size += 2 + 1;
+      }
+      if (DisableDisease != false) {
+        size += 2 + 1;
+      }
+      if (DisableBlood != false) {
+        size += 2 + 1;
+      }
+      if (DisableCurse != false) {
+        size += 2 + 1;
+      }
+      if (EnableCharm != false) {
+        size += 2 + 1;
+      }
+      if (EnableLifeTime != false) {
+        size += 2 + 1;
+      }
+      if (HasTarget != false) {
+        size += 2 + 1;
+      }
+      if (IsFireDamageCancel != false) {
+        size += 2 + 1;
+      }
+      if (IsExtendSpEffectLife != false) {
+        size += 2 + 1;
+      }
+      if (RequestLeaveColiseumSession != false) {
+        size += 2 + 1;
+      }
+      if (VowType0 != false) {
+        size += 2 + 1;
+      }
+      if (VowType1 != false) {
+        size += 2 + 1;
+      }
+      if (VowType2 != false) {
+        size += 2 + 1;
+      }
+      if (VowType3 != false) {
+        size += 2 + 1;
+      }
+      if (VowType4 != false) {
+        size += 2 + 1;
+      }
+      if (VowType5 != false) {
+        size += 2 + 1;
+      }
+      if (VowType6 != false) {
+        size += 2 + 1;
+      }
+      if (VowType7 != false) {
+        size += 2 + 1;
+      }
+      if (VowType8 != false) {
+        size += 2 + 1;
+      }
+      if (VowType9 != false) {
+        size += 2 + 1;
+      }
+      if (VowType10 != false) {
+        size += 2 + 1;
+      }
+      if (VowType11 != false) {
+        size += 2 + 1;
+      }
+      if (VowType12 != false) {
+        size += 2 + 1;
+      }
+      if (VowType13 != false) {
+        size += 2 + 1;
+      }
+      if (VowType14 != false) {
+        size += 2 + 1;
+      }
+      if (VowType15 != false) {
         size += 2 + 1;
       }
       if (FrostAttackPower != 0) {
@@ -12753,8 +14374,161 @@ namespace Ds3Ext {
       if (other.EffectTargetWhiteGhost != false) {
         EffectTargetWhiteGhost = other.EffectTargetWhiteGhost;
       }
-      if (other.StrangeEnum != false) {
-        StrangeEnum = other.StrangeEnum;
+      if (other.EffectTargetBlackGhost != false) {
+        EffectTargetBlackGhost = other.EffectTargetBlackGhost;
+      }
+      if (other.EffectTargetAttacker != false) {
+        EffectTargetAttacker = other.EffectTargetAttacker;
+      }
+      if (other.DispIconNonActive != false) {
+        DispIconNonActive = other.DispIconNonActive;
+      }
+      if (other.UseSpEffectEffect != false) {
+        UseSpEffectEffect = other.UseSpEffectEffect;
+      }
+      if (other.AdjustMagicAbility != false) {
+        AdjustMagicAbility = other.AdjustMagicAbility;
+      }
+      if (other.AdjustFaithAbility != false) {
+        AdjustFaithAbility = other.AdjustFaithAbility;
+      }
+      if (other.GameClearBonus != false) {
+        GameClearBonus = other.GameClearBonus;
+      }
+      if (other.MagParamChange != false) {
+        MagParamChange = other.MagParamChange;
+      }
+      if (other.MiracleParamChange != false) {
+        MiracleParamChange = other.MiracleParamChange;
+      }
+      if (other.ClearSoul != false) {
+        ClearSoul = other.ClearSoul;
+      }
+      if (other.RequestSOS != false) {
+        RequestSOS = other.RequestSOS;
+      }
+      if (other.RequestBlackSOS != false) {
+        RequestBlackSOS = other.RequestBlackSOS;
+      }
+      if (other.RequestForceJoinBlackSOS != false) {
+        RequestForceJoinBlackSOS = other.RequestForceJoinBlackSOS;
+      }
+      if (other.RequestKickSession != false) {
+        RequestKickSession = other.RequestKickSession;
+      }
+      if (other.RequestLeaveSession != false) {
+        RequestLeaveSession = other.RequestLeaveSession;
+      }
+      if (other.RequestNpcInveda != false) {
+        RequestNpcInveda = other.RequestNpcInveda;
+      }
+      if (other.NoDead != false) {
+        NoDead = other.NoDead;
+      }
+      if (other.CurrHPIndependeMax != false) {
+        CurrHPIndependeMax = other.CurrHPIndependeMax;
+      }
+      if (other.CorrosionIgnore != false) {
+        CorrosionIgnore = other.CorrosionIgnore;
+      }
+      if (other.SightSearchIgnore != false) {
+        SightSearchIgnore = other.SightSearchIgnore;
+      }
+      if (other.HearingSearchCutIgnore != false) {
+        HearingSearchCutIgnore = other.HearingSearchCutIgnore;
+      }
+      if (other.AntiMagicIgnore != false) {
+        AntiMagicIgnore = other.AntiMagicIgnore;
+      }
+      if (other.FakeTargetIgnore != false) {
+        FakeTargetIgnore = other.FakeTargetIgnore;
+      }
+      if (other.FakeTargetIgnoreUndead != false) {
+        FakeTargetIgnoreUndead = other.FakeTargetIgnoreUndead;
+      }
+      if (other.FakeTargetIgnoreAnimal != false) {
+        FakeTargetIgnoreAnimal = other.FakeTargetIgnoreAnimal;
+      }
+      if (other.GrabityIgnore != false) {
+        GrabityIgnore = other.GrabityIgnore;
+      }
+      if (other.DisablePoison != false) {
+        DisablePoison = other.DisablePoison;
+      }
+      if (other.DisableDisease != false) {
+        DisableDisease = other.DisableDisease;
+      }
+      if (other.DisableBlood != false) {
+        DisableBlood = other.DisableBlood;
+      }
+      if (other.DisableCurse != false) {
+        DisableCurse = other.DisableCurse;
+      }
+      if (other.EnableCharm != false) {
+        EnableCharm = other.EnableCharm;
+      }
+      if (other.EnableLifeTime != false) {
+        EnableLifeTime = other.EnableLifeTime;
+      }
+      if (other.HasTarget != false) {
+        HasTarget = other.HasTarget;
+      }
+      if (other.IsFireDamageCancel != false) {
+        IsFireDamageCancel = other.IsFireDamageCancel;
+      }
+      if (other.IsExtendSpEffectLife != false) {
+        IsExtendSpEffectLife = other.IsExtendSpEffectLife;
+      }
+      if (other.RequestLeaveColiseumSession != false) {
+        RequestLeaveColiseumSession = other.RequestLeaveColiseumSession;
+      }
+      if (other.VowType0 != false) {
+        VowType0 = other.VowType0;
+      }
+      if (other.VowType1 != false) {
+        VowType1 = other.VowType1;
+      }
+      if (other.VowType2 != false) {
+        VowType2 = other.VowType2;
+      }
+      if (other.VowType3 != false) {
+        VowType3 = other.VowType3;
+      }
+      if (other.VowType4 != false) {
+        VowType4 = other.VowType4;
+      }
+      if (other.VowType5 != false) {
+        VowType5 = other.VowType5;
+      }
+      if (other.VowType6 != false) {
+        VowType6 = other.VowType6;
+      }
+      if (other.VowType7 != false) {
+        VowType7 = other.VowType7;
+      }
+      if (other.VowType8 != false) {
+        VowType8 = other.VowType8;
+      }
+      if (other.VowType9 != false) {
+        VowType9 = other.VowType9;
+      }
+      if (other.VowType10 != false) {
+        VowType10 = other.VowType10;
+      }
+      if (other.VowType11 != false) {
+        VowType11 = other.VowType11;
+      }
+      if (other.VowType12 != false) {
+        VowType12 = other.VowType12;
+      }
+      if (other.VowType13 != false) {
+        VowType13 = other.VowType13;
+      }
+      if (other.VowType14 != false) {
+        VowType14 = other.VowType14;
+      }
+      if (other.VowType15 != false) {
+        VowType15 = other.VowType15;
       }
       if (other.FrostAttackPower != 0) {
         FrostAttackPower = other.FrostAttackPower;
@@ -13256,14 +15030,218 @@ namespace Ds3Ext {
             break;
           }
           case 984: {
-            StrangeEnum = input.ReadBool();
+            EffectTargetBlackGhost = input.ReadBool();
             break;
           }
           case 992: {
+            EffectTargetAttacker = input.ReadBool();
+            break;
+          }
+          case 1000: {
+            DispIconNonActive = input.ReadBool();
+            break;
+          }
+          case 1008: {
+            UseSpEffectEffect = input.ReadBool();
+            break;
+          }
+          case 1016: {
+            AdjustMagicAbility = input.ReadBool();
+            break;
+          }
+          case 1024: {
+            AdjustFaithAbility = input.ReadBool();
+            break;
+          }
+          case 1032: {
+            GameClearBonus = input.ReadBool();
+            break;
+          }
+          case 1040: {
+            MagParamChange = input.ReadBool();
+            break;
+          }
+          case 1048: {
+            MiracleParamChange = input.ReadBool();
+            break;
+          }
+          case 1056: {
+            ClearSoul = input.ReadBool();
+            break;
+          }
+          case 1064: {
+            RequestSOS = input.ReadBool();
+            break;
+          }
+          case 1072: {
+            RequestBlackSOS = input.ReadBool();
+            break;
+          }
+          case 1080: {
+            RequestForceJoinBlackSOS = input.ReadBool();
+            break;
+          }
+          case 1088: {
+            RequestKickSession = input.ReadBool();
+            break;
+          }
+          case 1096: {
+            RequestLeaveSession = input.ReadBool();
+            break;
+          }
+          case 1104: {
+            RequestNpcInveda = input.ReadBool();
+            break;
+          }
+          case 1112: {
+            NoDead = input.ReadBool();
+            break;
+          }
+          case 1120: {
+            CurrHPIndependeMax = input.ReadBool();
+            break;
+          }
+          case 1128: {
+            CorrosionIgnore = input.ReadBool();
+            break;
+          }
+          case 1136: {
+            SightSearchIgnore = input.ReadBool();
+            break;
+          }
+          case 1144: {
+            HearingSearchCutIgnore = input.ReadBool();
+            break;
+          }
+          case 1152: {
+            AntiMagicIgnore = input.ReadBool();
+            break;
+          }
+          case 1160: {
+            FakeTargetIgnore = input.ReadBool();
+            break;
+          }
+          case 1168: {
+            FakeTargetIgnoreUndead = input.ReadBool();
+            break;
+          }
+          case 1176: {
+            FakeTargetIgnoreAnimal = input.ReadBool();
+            break;
+          }
+          case 1184: {
+            GrabityIgnore = input.ReadBool();
+            break;
+          }
+          case 1192: {
+            DisablePoison = input.ReadBool();
+            break;
+          }
+          case 1200: {
+            DisableDisease = input.ReadBool();
+            break;
+          }
+          case 1208: {
+            DisableBlood = input.ReadBool();
+            break;
+          }
+          case 1216: {
+            DisableCurse = input.ReadBool();
+            break;
+          }
+          case 1224: {
+            EnableCharm = input.ReadBool();
+            break;
+          }
+          case 1232: {
+            EnableLifeTime = input.ReadBool();
+            break;
+          }
+          case 1240: {
+            HasTarget = input.ReadBool();
+            break;
+          }
+          case 1248: {
+            IsFireDamageCancel = input.ReadBool();
+            break;
+          }
+          case 1256: {
+            IsExtendSpEffectLife = input.ReadBool();
+            break;
+          }
+          case 1264: {
+            RequestLeaveColiseumSession = input.ReadBool();
+            break;
+          }
+          case 1272: {
+            VowType0 = input.ReadBool();
+            break;
+          }
+          case 1280: {
+            VowType1 = input.ReadBool();
+            break;
+          }
+          case 1288: {
+            VowType2 = input.ReadBool();
+            break;
+          }
+          case 1296: {
+            VowType3 = input.ReadBool();
+            break;
+          }
+          case 1304: {
+            VowType4 = input.ReadBool();
+            break;
+          }
+          case 1312: {
+            VowType5 = input.ReadBool();
+            break;
+          }
+          case 1320: {
+            VowType6 = input.ReadBool();
+            break;
+          }
+          case 1328: {
+            VowType7 = input.ReadBool();
+            break;
+          }
+          case 1336: {
+            VowType8 = input.ReadBool();
+            break;
+          }
+          case 1344: {
+            VowType9 = input.ReadBool();
+            break;
+          }
+          case 1352: {
+            VowType10 = input.ReadBool();
+            break;
+          }
+          case 1360: {
+            VowType11 = input.ReadBool();
+            break;
+          }
+          case 1368: {
+            VowType12 = input.ReadBool();
+            break;
+          }
+          case 1376: {
+            VowType13 = input.ReadBool();
+            break;
+          }
+          case 1384: {
+            VowType14 = input.ReadBool();
+            break;
+          }
+          case 1392: {
+            VowType15 = input.ReadBool();
+            break;
+          }
+          case 1400: {
             FrostAttackPower = input.ReadSInt32();
             break;
           }
-          case 1005: {
+          case 1413: {
             DarkDifferenceRate = input.ReadFloat();
             break;
           }
@@ -13279,7 +15257,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<NpcParam> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -19268,7 +21246,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<BehaviorParam> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -19803,7 +21781,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<AtkParam> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -28816,7 +30794,7 @@ namespace Ds3Ext {
     public static pb::MessageParser<FmgEntry> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Ds3Ext.Ds3ExtReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

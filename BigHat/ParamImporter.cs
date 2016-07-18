@@ -99,6 +99,9 @@ namespace BigHat
                 var id = BitConverter.ToUInt32(_data, 0x40 + 0x18*i);
 
                 var structure = ParamEntry.FromBytes<T>(_data, realOffset);
+                structure.Id = id;
+                structure.Index = i;
+                structure.Offset = realOffset;
                 ret.Add(structure);
             }
 

@@ -97,6 +97,7 @@ namespace BigHat
                 t.WriteMessage<EquipParamAccessory>();
                 t.WriteMessage<EquipParamProtector>();
                 t.WriteMessage<ReinforceParamWeapon>();
+                t.WriteMessage<ReinforceParamProtector>();
                 t.WriteMessage<AttackElementCorrectParam>();
                 t.WriteMessage<CalcCorrectGraph>();
                 t.WriteMessage<Magic>();

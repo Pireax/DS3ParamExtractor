@@ -21,6 +21,7 @@ namespace BigHat
             var fieldNames = data[0].GetFieldNames();
             var entry0 = data[0];
 
+            var pbName = entry0.GetType().Name;
             var protoClass = Type.GetType($"Ds3Ext.{entry0.GetType().Name}");
             var protoProperties = new List<PropertyInfo>(fieldNames.Count);
             protoProperties.AddRange(fieldNames.Select(fieldName => protoClass.GetProperty(FixStringProto(fieldName))));
