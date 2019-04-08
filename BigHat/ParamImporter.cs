@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using BigHat.ParamEntries;
@@ -29,8 +30,7 @@ namespace BigHat
 
         public ParamImporter(string path)
         {
-            _data = Utils.GetBinaryDataFromFile(path);
-
+            _data = Utils.ReadBinaryDataFromFile(path);
             ReadHeaderData();
         }
 
@@ -47,7 +47,6 @@ namespace BigHat
                 tableName.Append((char) nextChar);
                 tableNameOffset++;
             }
-
             return tableName.ToString();
         }
 
@@ -116,6 +115,8 @@ namespace BigHat
             _baseOffset = BitConverter.ToUInt32(_data, 0x30);
         }
 
+        [SuppressMessage("ReSharper", "StringLiteralTypo")]
+        [SuppressMessage("ReSharper", "RedundantCaseLabel")]
         private ParamType GetParamType()
         {
             var structName = GetTableName(_data);
@@ -224,7 +225,7 @@ namespace BigHat
                 case "WET_ASPECT_PARAM_ST":
                 case "WIND_PARAM_ST":
                 default:
-                    throw new Exception("This structure type is not yet supported");
+                    throw new Exception("This structure type is not supported");
             }
         }
     }

@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using BigHat.ParamEntries;
 
@@ -27,11 +28,27 @@ namespace BigHat
             Proto
         }
 
+        public static void TryExport(string filename)
+        {
+            try
+            {
+                Console.WriteLine($"Exporting {filename}...");
+                TryExport(filename, CreateImporterForFile(filename));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
         public static void TryExport(string filename, IImporter importer)
         {
-            Console.WriteLine($"Exporting {filename}...");
+            if (filename == null) throw new ArgumentNullException(nameof(filename));
+            if (filename == string.Empty) throw new ArgumentException("filename is an empty string", nameof(filename));
+            if (importer == null) throw new ArgumentNullException(nameof(importer));
+
             var outputPath =
-                $"{Path.Combine(Path.GetDirectoryName(filename), Path.GetFileNameWithoutExtension(filename))}Out.csv";
+                $"{Path.Combine(Path.GetDirectoryName(filename) ?? string.Empty, Path.GetFileNameWithoutExtension(filename))}Out.csv";
 
             if (_exportFormat == ExportFormat.Csv)
                 CsvExporter.Export(outputPath, importer.Import(), (_arguments & Arguments.Headers) == Arguments.Headers,
@@ -41,69 +58,80 @@ namespace BigHat
                 ProtoBufDataExporter.Export(outputPath, importer.Import());
         }
 
-        public static void TryExportFmg(string filename)
+        private static void Main(string[] args)
         {
-            FmgImporter importer;
-            try
+            Console.OutputEncoding = Encoding.Unicode;
+            SetupNumberFormat();
+            var path = ParseArgs(args);
+
+            if (path == null)
             {
-                importer = new FmgImporter(filename);
-            }
-            catch (Exception)
-            {
+                ExportDefault();
                 return;
             }
-            TryExport(filename, importer);
+
+            var extension = Path.GetExtension(path);
+            if (string.IsNullOrEmpty(extension))
+                ExportDefault(path);
+            else
+                TryExport(path);
         }
 
-        public static void TryExportParam(string filename)
+        private static IImporter CreateImporterForFile(string filename)
         {
-            ParamImporter importer;
-            try
+            switch (Path.GetExtension(filename))
             {
-                importer = new ParamImporter(filename);
+                case ".param":
+                    return new ParamImporter(filename);
+                case ".fmg":
+                    return new FmgImporter(filename);
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(filename), filename,
+                        "Expected .param or .fmg file extension.");
             }
-            catch (Exception)
-            {
-                return;
-            }
-            TryExport(filename, importer);
         }
 
         private static void ExportDefault(string folderPath = "")
         {
-            TryExportFmg(Path.Combine(folderPath, "NPC名.fmg")); // Npc Names
-            TryExportFmg(Path.Combine(folderPath, "アイテムうんちく.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "アイテム名.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "アイテム説明.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "アクセサリうんちく.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "アクセサリ名.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "アクセサリ説明.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "地名.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "武器うんちく.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "武器名.fmg")); // Weapon Names
-            // TryExportFmg(Path.Combine(folderPath, "武器説明.fmg")); // Doesn't contain anything as far as I can see.
-            TryExportFmg(Path.Combine(folderPath, "防具うんちく.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "防具名.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "防具説明.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "魔法うんちく.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "魔法名.fmg"));
-            TryExportFmg(Path.Combine(folderPath, "魔法説明.fmg"));
+            string[] defaultFiles = {
+                "NPC名.fmg", // Npc names
+                "アイテムうんちく.fmg",
+                "アイテム名.fmg",
+                "アイテム説明.fmg",
+                "アクセサリうんちく.fmg",
+                "アクセサリ名.fmg",
+                "アクセサリ説明.fmg",
+                "地名.fmg",
+                "武器うんちく.fmg",
+                "武器名.fmg", // Weapon names
+                // "武器説明.fmg", // Doesn't contain anything as far as I can see.
+                "防具うんちく.fmg",
+                "防具名.fmg",
+                "防具説明.fmg",
+                "魔法うんちく.fmg",
+                "魔法名.fmg",
+                "魔法説明.fmg",
+                "EquipParamWeapon.param",
+                "EquipParamAccessory.param",
+                "EquipParamProtector.param",
+                "ReinforceParamWeapon.param",
+                "ReinforceParamProtector.param",
+                "AttackElementCorrectParam.param",
+                "CalcCorrectGraph.param",
+                "Magic.param",
+                "SpEffectParam.param",
+                "NpcParam.param",
+                "BehaviorParam.param",
+                "BehaviorParam_PC.param",
+                "AtkParam_Pc.param",
+                "AtkParam_Npc.param"
+            };
 
-
-            TryExportParam(Path.Combine(folderPath, "EquipParamWeapon.param"));
-            TryExportParam(Path.Combine(folderPath, "EquipParamAccessory.param"));
-            TryExportParam(Path.Combine(folderPath, "EquipParamProtector.param"));
-            TryExportParam(Path.Combine(folderPath, "ReinforceParamWeapon.param"));
-            TryExportParam(Path.Combine(folderPath, "ReinforceParamProtector.param"));
-            TryExportParam(Path.Combine(folderPath, "AttackElementCorrectParam.param"));
-            TryExportParam(Path.Combine(folderPath, "CalcCorrectGraph.param"));
-            TryExportParam(Path.Combine(folderPath, "Magic.param"));
-            TryExportParam(Path.Combine(folderPath, "SpEffectParam.param"));
-            TryExportParam(Path.Combine(folderPath, "NpcParam.param"));
-            TryExportParam(Path.Combine(folderPath, "BehaviorParam.param"));
-            TryExportParam(Path.Combine(folderPath, "BehaviorParam_PC.param"));
-            TryExportParam(Path.Combine(folderPath, "AtkParam_Pc.param"));
-            TryExportParam(Path.Combine(folderPath, "AtkParam_Npc.param"));
+            foreach (var file in defaultFiles)
+            {
+                var filepath = Path.Combine(folderPath, file);
+                if (File.Exists(filepath)) TryExport(filepath);
+            }
         }
 
         private static void GenerateProto()
@@ -126,11 +154,10 @@ namespace BigHat
             }
         }
 
-        private static void Initialize()
+        private static void SetupNumberFormat()
         {
             var cultureInfo = (CultureInfo) Thread.CurrentThread.CurrentCulture.Clone();
             cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
-
             Thread.CurrentThread.CurrentCulture = cultureInfo;
         }
 
@@ -138,6 +165,7 @@ namespace BigHat
         {
             try
             {
+                // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
                 Path.GetFullPath(str);
                 return true;
             }
@@ -145,25 +173,6 @@ namespace BigHat
             {
                 return false;
             }
-        }
-
-        private static void Main(string[] args)
-        {
-            Initialize();
-            var path = ParseArgs(args);
-
-            if (path != null)
-            {
-                var extension = Path.GetExtension(path);
-                if (extension == ".fmg")
-                    TryExportFmg(path);
-                else if (extension == ".param")
-                    TryExportParam(path);
-                else if (string.IsNullOrEmpty(extension))
-                    ExportDefault(path);
-                else return;
-            }
-            else ExportDefault();
         }
 
         private static void OutputHelpAndExit()

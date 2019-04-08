@@ -7,7 +7,7 @@ namespace BigHat
 {
     internal static class Utils
     {
-        public static byte[] GetBinaryDataFromFile(string filename)
+        public static byte[] ReadBinaryDataFromFile(string filename)
         {
             if (!File.Exists(filename))
                 throw new ArgumentException();

@@ -10,8 +10,7 @@ namespace BigHat
 
         public FmgImporter(string path)
         {
-            _data = Utils.GetBinaryDataFromFile(path);
-
+            _data = Utils.ReadBinaryDataFromFile(path);
             Count = BitConverter.ToInt32(_data, 0x0C);
         }
 
